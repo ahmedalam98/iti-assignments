@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #182549;
+  background: linear-gradient(135deg, #182549, #915b9a);
+  background-repeat: no-repeat;
+  height: fit-content;
+  color: rgb(210, 210, 210);
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.enter {
+  cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.header_container {
+  text-align: center;
+  height: 20%;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.text_container {
+  line-height: 22px;
+}
+
+.diff_font {
+  font-family: Georgia;
+}
+
+.diff_size {
+  font-size: 12px;
+}
+
+.diff_color {
+  color: red;
+}
+
+.welcome {
+  cursor: pointer;
+}
+
+.welcome_container {
+  text-align: center;
+}
+
+.top,
+.next {
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 30px;
+}
+
+.next {
+  text-align: end;
+}
+
+/* //////////////////////////////////////////////// */
+
+.map_container {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.map {
+  margin-bottom: 60px;
+  display: block;
+}
