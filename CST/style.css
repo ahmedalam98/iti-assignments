@@ -143,6 +143,7 @@ input[type="checkbox"] {
   vertical-align: middle;
   position: relative;
   top: -1.5px;
+  accent-color: #232323;
 }
 
 form p {
@@ -151,8 +152,9 @@ form p {
 
 select {
   outline: none;
-  padding: 4px;
+  padding: 8px;
   border-radius: 8px;
+  width: 220px;
 }
 
 textarea {
