@@ -12,7 +12,7 @@ body {
   background: linear-gradient(135deg, #182549, #915b9a);
   background-repeat: no-repeat;
   height: fit-content;
-  color: rgb(210, 210, 210);
+  color: rgb(226, 226, 226);
   overflow-x: hidden;
 }
 
@@ -95,4 +95,85 @@ a {
 .map {
   margin-bottom: 60px;
   display: block;
+}
+
+/* //////////////////////////////////////////////// */
+
+fieldset {
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 32px;
+}
+
+legend {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+form {
+  width: 600px;
+  margin: 80px auto;
+}
+
+#login-form {
+  height: 80vh !important;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+input {
+  outline: none;
+  width: 220px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 14px;
+  height: 16px;
+  margin: 0 8px;
+  padding: 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1.5px;
+}
+
+form p {
+  display: inline;
+}
+
+select {
+  outline: none;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+textarea {
+  border-radius: 8px;
+  outline: none;
+  padding: 8px;
+}
+
+.submit-container {
+  text-align: center;
+  margin-top: 18px;
+}
+
+button {
+  height: 48px;
+  width: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 18px;
+  cursor: pointer;
 }
