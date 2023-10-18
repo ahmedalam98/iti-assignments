@@ -7,7 +7,7 @@
     <title>Login Page</title>
   </head>
   <body>
-    <form method="get" action="./page2.html" id="login-form">
+    <form method="get" action="./page2.html" class="login-form">
       <fieldset>
         <legend>Login</legend>
 
@@ -43,17 +43,20 @@
               />
             </td>
           </tr>
-
-          <tr>
-            <td>
-              <input type="checkbox" id="remember" name="remember" />
-              <label for="remember">Remember me</label>
-            </td>
-          </tr>
         </table>
 
+        <div class="remember-me">
+          <input
+            type="checkbox"
+            id="remember"
+            name="remember"
+            class="btn-remember"
+          />
+          <label for="remember">Remember me</label>
+        </div>
+
         <div class="submit-container">
-          <button type="submit">Login</button>
+          <button class="btn" type="submit">Login</button>
         </div>
       </fieldset>
     </form>
