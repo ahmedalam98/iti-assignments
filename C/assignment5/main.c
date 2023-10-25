@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_SIZE 50
+#define MAX_SIZE 5
 
 int main() {
     int numbers[MAX_SIZE];
