@@ -1,3 +1,5 @@
+// Task 6 : 2D Array of getting grades, sum of each row, avg of each col, get grade for each student, sort grade
+
 #include <stdio.h>
 #include <stdlib.h>
 #define STD 3

@@ -1,7 +1,7 @@
+// Task 12 : Decimal to Hexadecimal Recursive Function
+
 #include <stdio.h>
 #include <stdlib.h>
-
-// Task 12 : Decimal to Hexadecimal Recursive Function
 
 void decimalToHexa(int n) {
     if (n == 0) {

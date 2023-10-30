@@ -1,3 +1,5 @@
+// Task 9 : Read a character from keyboard and print the ASCII code of the normal or extended character. 
+
 #include <stdio.h>
 #include <conio.h>
 

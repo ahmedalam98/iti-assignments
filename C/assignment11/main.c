@@ -1,7 +1,7 @@
+// Task 11 : Decimal to Binary without recursive function
+
 #include <stdio.h>
 #include <stdlib.h>
-
-// Task 11 : Decimal to Binary without recursive function
 
 void main (){
 

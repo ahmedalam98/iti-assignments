@@ -1,3 +1,4 @@
+// Task 2 : Write a program to calculate the grade of a student without using ( if else ) statement.
 
 int main() {
   float score;

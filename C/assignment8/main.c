@@ -1,3 +1,5 @@
+// Task 8 : Write a program to read 5 characters from the keyboard and display them on the screen automatically. Or when the user presses the Enter key, the program will stop reading and display the characters on the screen.
+
 #include <stdio.h>
 
 int main() {
@@ -9,7 +11,7 @@ int main() {
     while (count < 5) {
         int ch = getche();
 
-        if (ch==13) {  // Check for the Enter key (ASCII 10)
+        if (ch==13) {  // Check for the Enter key (ASCII 13)
             break;
         }
 

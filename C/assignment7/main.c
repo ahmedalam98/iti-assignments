@@ -1,3 +1,5 @@
+// Task 7 : Write a program in C to store n number of names in an array and display the names stored in the array.
+
 #include <stdio.h>
 #include <string.h>
 

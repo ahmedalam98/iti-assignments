@@ -1,3 +1,5 @@
+// Task 3 : Write a program to display a menu with 3 choices of food items and their prices. 
+
 #include <stdio.h>
 #include <stdlib.h>
 

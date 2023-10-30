@@ -1,7 +1,7 @@
+// Task 13 : Factorial Number using For Loop
+
 #include <stdio.h>
 #include <stdlib.h>
-
-// Task 13 : Factorial Number using For Loop
 
 int factorial(int n) {
     int result = 1;

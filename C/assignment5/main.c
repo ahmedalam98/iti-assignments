@@ -1,3 +1,5 @@
+// Task 5 : Mathematical Operations on Arrays
+
 #include <stdio.h>
 #define MAX_SIZE 5
 
