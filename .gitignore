@@ -1,0 +1,5 @@
+# Ignore a specific folder
+vscode
+
+# Ignore all files with a specific extension
+*.vscode
