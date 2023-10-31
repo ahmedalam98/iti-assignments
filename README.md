@@ -2,7 +2,7 @@
 
 Repo for ITI labs assignments
 
-## CST
+## Client Side Technologies
 
 #### Lab 1
 
@@ -68,3 +68,15 @@ Repo for ITI labs assignments
 #### Task 13
 
 - Factorial Number using For Loop
+
+#### Task 14
+
+- Factorial Number using Recursive Function
+
+#### Task 15
+
+- Reverse, Sum, Swap of Array using pointers
+
+#### Task 16
+
+- Highlighted Menu ( functions + edit , delete )
