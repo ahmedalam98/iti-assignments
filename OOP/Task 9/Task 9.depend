@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1699358775 source:d:\iti\iti-assignments\oop\task 9\main.cpp
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<conio.h>
+
