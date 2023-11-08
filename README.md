@@ -100,3 +100,73 @@ Repo for ITI labs assignments
 #### Task 21
 
 - Single line editor program - Dynamic Allocation
+
+## Object Oriented Programming in C++
+
+#### Task 1
+
+- Structure for representing complex numbers
+
+#### Task 2
+
+- Class for representing complex numbers with member functions
+
+#### Task 3
+
+- Addition, Subtraction, and Printing Complex Numbers
+
+#### Task 4
+
+- Stack using an array with push, pop, and printStack operations
+
+#### Task 5
+
+- Dynamic Size Stack
+
+#### Task 6
+
+- Overloading operators for addition, subtraction, compound assignment, increment, decrement, and relational operations
+
+#### Task 7
+
+- Demonstration of the use of the equal operator with a stack class
+
+#### Task 8
+
+- Stack with dynamic memory allocation
+
+#### Task 9
+
+- Utilizing graphics.h draw geometric shapes, including rectangles, lines, and circles
+
+#### Task 10
+
+- Dynamic drawer [ Picture , Circle , Rectangle , Line Classes ]
+
+#### Task 11
+
+- Template class stack for a stack data structure
+
+#### Task 12
+
+- Basic Class Inheritance
+
+#### Task 13
+
+- Calculate the area of geometric shapes using inheritance
+
+#### Task 14
+
+- Picture class allows the user to input the number of shapes and their respective details (coordinates, dimensions, and colors) 🚀
+
+#### Task 15
+
+- Geo Shape Inheritance
+
+#### Task 16
+
+- Complex Class
+
+#### Task 17
+
+- Color Class Pointer to Pointer
