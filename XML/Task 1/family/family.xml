@@ -2,13 +2,13 @@
 <!DOCTYPE family SYSTEM "family.dtd">
 <family>
 	<grandfather>Ibrahim
-      <father job="Engineer">Ali
-                  <mother>mona</mother>
-                  <daughter age="23" job="ITI student">ghada</daughter>
-			           <son age="21" sport="football">mohamed</son>
-      </father>
-		 <uncle>Alaa</uncle>
-		 <uncle>reda</uncle>
-		 <aunt sons="2">layla</aunt>
+    <father job="Engineer">Ali
+      <mother>mona</mother>
+      <daughter age="23" job="ITI student">ghada</daughter>
+			<son age="21" sport="football">mohamed</son>
+    </father>
+		<uncle>Alaa</uncle>
+		<uncle>reda</uncle>
+		<aunt sons="2">layla</aunt>
 	</grandfather>
 </family>
