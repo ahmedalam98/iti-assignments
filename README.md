@@ -1,7 +1,18 @@
 # Information Technology Institute Assignments
 
 Repo for ITI labs assignments
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#client-side-technologies">Client Side Technologies</a></li>
+    <li><a href="#c-programming-language">C Programming Language</a></li>
+    <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
+    <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
+  </ol>
+</details>
 
+<a id="client-side-technologies"></a>
 ## Client Side Technologies
 
 #### Lab 1
@@ -15,6 +26,7 @@ Repo for ITI labs assignments
 - Implement the layout using an HTML table ( not allowed to use flex or grid )
 - Use <strong>Formspree</strong> API to post register info
 
+<a id="c-programming-language"></a>
 ## C Programming Language
 
 #### Task 1
@@ -101,6 +113,7 @@ Repo for ITI labs assignments
 
 - Single line editor program - Dynamic Allocation
 
+<a id="object-oriented-programming-in-c"></a>
 ## Object Oriented Programming in C++
 
 #### Task 1
@@ -171,6 +184,7 @@ Repo for ITI labs assignments
 
 - Color Class Pointer to Pointer
 
+<a id="extensible-markup-language-xml"></a>
 ## Extensible Markup Language ( XML )
 
 #### Task 1
