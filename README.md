@@ -1,6 +1,5 @@
 # Information Technology Institute Assignments
 
-Repo for ITI labs assignments
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -11,6 +10,9 @@ Repo for ITI labs assignments
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
   </ol>
 </details>
+
+<br/>
+<br/>
 
 <a id="client-side-technologies"></a>
 ## Client Side Technologies
