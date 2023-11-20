@@ -15,6 +15,7 @@
 <br/>
 
 <a id="client-side-technologies"></a>
+
 ## Client Side Technologies
 
 #### Lab 1
@@ -29,6 +30,7 @@
 - Use <strong>Formspree</strong> API to post register info
 
 <a id="c-programming-language"></a>
+
 ## C Programming Language
 
 #### Task 1
@@ -116,6 +118,7 @@
 - Single line editor program - Dynamic Allocation
 
 <a id="object-oriented-programming-in-c"></a>
+
 ## Object Oriented Programming in C++
 
 #### Task 1
@@ -187,8 +190,13 @@
 - Color Class Pointer to Pointer
 
 <a id="extensible-markup-language-xml"></a>
+
 ## Extensible Markup Language ( XML )
 
 #### Task 1
 
 - Define XML and DTD basic relationships and attributes for family & purchase order
+
+#### Task 2
+
+- Add Schema for family & purchase order XML
