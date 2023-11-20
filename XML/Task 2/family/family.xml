@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<family xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="family.xsd">
+	<grandfather>Ibrahim
+    <father job="Engineer">Ali
+      <mother>mona</mother>
+      <daughter age="23" job="ITI student">ghada</daughter>
+      <son age="21" sport="football">mohamed</son>
+    </father>
+		 <uncle>Alaa</uncle>
+		 <uncle>reda</uncle>
+		 <aunt sons="2">layla</aunt>
+	</grandfather>
+</family>
