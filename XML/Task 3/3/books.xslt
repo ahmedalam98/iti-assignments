@@ -4,8 +4,8 @@
   <xsl:template match="/">
     <html>
       <body>
-        <h2>Review of 3.5 = <xsl:value-of select="count(books/book[review = '3.5'])"/></h2>
-        <h2>Review of 4 = <xsl:value-of select="count(books/book[review = '4'])"/></h2>
+        <p>Review of 3.5 = <xsl:value-of select="count(books/book[review = '3.5'])"/></p>
+        <p>Review of 4 = <xsl:value-of select="count(books/book[review = '4'])"/></p>
       </body>
     </html>
   </xsl:template>

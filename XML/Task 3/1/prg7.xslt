@@ -13,7 +13,7 @@
     <div>
       <xsl:choose>
         <xsl:when test="SUMMARY">
-          <h2>SUMMARY: <xsl:value-of select="SUMMARY"/></h2>
+          <p>SUMMARY: <xsl:value-of select="SUMMARY"/></p>
         </xsl:when>
     
         <xsl:otherwise>

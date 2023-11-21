@@ -24,7 +24,7 @@
     <xsl:variable name="color">
       <xsl:choose>
         <xsl:when test="$price &gt; 10">red</xsl:when>
-        <xsl:otherwise>lightgreen</xsl:otherwise>
+        <xsl:otherwise>green</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     <tr>

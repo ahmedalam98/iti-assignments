@@ -7,7 +7,7 @@
         <h2>My CD Collection</h2>
         <table border="1">
           <tr>
-            <th style="background-color: lightgreen;">CD TITLE</th>
+            <th style="background-color: lightgreen;">TITLE</th>
             <th style="background-color: lightgreen;">ARTIST</th>
           </tr>
           <xsl:for-each select="CATALOG/CD[PRICE > 10]">
