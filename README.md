@@ -200,3 +200,8 @@
 #### Task 2
 
 - Add Schema for family & purchase order XML
+
+#### Task 3
+
+- Add XSLT files for 6 XML tasks to meet the required HTML. <br/>
+  (You will need an online editor to see the result: https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
