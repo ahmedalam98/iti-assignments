@@ -12,4 +12,4 @@ function printHeadline(response) {
 
 printHeadline(response);
 
-// 1.2
+

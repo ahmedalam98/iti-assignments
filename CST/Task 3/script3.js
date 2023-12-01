@@ -1,6 +1,4 @@
 function checkDivisable(x, y, z) {
-  // make it chech x is divisable by y and z and console it
-
   if (x % y == 0 && x % z == 0) {
     console.log("first number is divisable by second and third number");
   } else if (x % y == 0 && x % z != 0) {
