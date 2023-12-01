@@ -29,6 +29,19 @@
 - Implement the layout using an HTML table ( not allowed to use flex or grid )
 - Use <strong>Formspree</strong> API to post register info
 
+#### Lab 3
+
+- Display headlines with JS
+- Sum function using prompt dialog box
+- Divisible numbers function
+- Range display function
+
+#### Lab 4
+
+- 1. String & RegEx objects
+- 2. Array object
+- 3. Math object
+
 <a id="c-programming-language"></a>
 
 ## C Programming Language
