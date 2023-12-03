@@ -42,6 +42,13 @@
 - 2. Array object
 - 3. Math object
 
+#### Lab 5
+
+- 1. Object Object
+- 2. Floating Child
+- 3. Typing Message
+- 4. Advertising
+
 <a id="c-programming-language"></a>
 
 ## C Programming Language
