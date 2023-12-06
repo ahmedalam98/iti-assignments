@@ -16,6 +16,9 @@ function registerUser() {
   setCookie("gender", gender);
   setCookie("visitCount", "1");
 
+  // If you want to set a persistent cookie, uncomment the following line
+  // setCookie("persistentCookie", "persistent", "2024-12-31T00:00:00");
+
   if (!userName || !gender) {
     alert("Please fill all the fields");
   } else {
