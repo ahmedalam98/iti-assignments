@@ -69,6 +69,8 @@ function openChildWindow() {
 
   closeButton.addEventListener("click", function () {
     childWindow.close();
+    message.value = "";
   });
+
   childWindowDocument.body.appendChild(closeButton);
 }
