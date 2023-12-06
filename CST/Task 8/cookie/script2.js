@@ -23,6 +23,9 @@ function displayUserProfile() {
 
   // Increment visit count
   setCookie("visitCount", (visitCount + 1).toString());
+
+  console.log(userName);
+  deleteCookie("userName");
 }
 
 function getFontColor(gender) {

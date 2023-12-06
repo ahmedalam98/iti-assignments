@@ -21,6 +21,7 @@ function registerUser() {
 
   if (!userName || !gender) {
     alert("Please fill all the fields");
+    throw new Error("Please fill all the fields");
   } else {
     location.assign("child.html");
   }
@@ -49,16 +50,7 @@ function getCookie(cookieName) {
 }
 
 function deleteCookie(cookieName) {
-  var check = document.cookie.includes(cookieName);
-  if (check) {
-    var date = new Date();
-    var hours = date.getHours();
-    hours--;
-    date.setHours(hours);
-
-    // second parameter is the cookie value
-    setCookie(cookieName, "", date);
-  }
+  document.cookie = cookieName + "=''; expires=Thu, 01 Jan 2020 00:00:00 UTC";
 }
 
 function allCookieList() {
