@@ -15,7 +15,7 @@ var linkeListObj = {
         return this.values;
       } else {
         throw new Error(
-          `You can't push this value, Try value bigger than ${lastElement.val} `
+          `You can't push this value, Try value bigger than ${lastElement.val} or use insertVal() `
         );
       }
     }
@@ -49,12 +49,13 @@ var linkeListObj = {
         return this.values;
       } else {
         throw new Error(
-          `You can't unshit this value, Try value smaller than ${firstElement.val} `
+          `You can't unshit this value, Try value smaller than ${firstElement.val} or use insertVal() `
         );
       }
     }
   },
 
+  // Insert a value in the list
   InsertVal: function (obj) {
     var position = this.values.findIndex((element) => element.val > obj.val);
     var existed = this.values.find((element) => element.val === obj.val);
@@ -71,6 +72,23 @@ var linkeListObj = {
       }
 
       return this.values;
+    }
+  },
+
+  // Delete a value from the list
+  deleteVal: function (obj) {
+    var existed = this.values.find((element) => element.val === obj.val);
+
+    if (existed) {
+      var position = this.values.findIndex(
+        (element) => element.val === obj.val
+      );
+
+      this.values.splice(position, 1);
+
+      return this.values;
+    } else {
+      throw new Error(`You can't delete this value, It's not existed`);
     }
   },
 
