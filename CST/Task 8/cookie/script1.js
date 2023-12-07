@@ -28,16 +28,24 @@ function registerUser() {
 }
 
 function setCookie(cookieName, cookieValue, expireDate) {
+  if (typeof cookieName === "undefined" || typeof cookieValue === "undefined") {
+    throw new Error("Cookie name and value are required");
+  }
+
   var cookieString = cookieName + "=" + cookieValue;
 
   if (expireDate) {
     var expires = new Date(expireDate);
-    cookieString += +" ;expires=" + expires;
+    cookieString += ";expires=" + expires.toUTCString();
   }
   document.cookie = cookieString;
 }
 
 function getCookie(cookieName) {
+  if (typeof cookieName === "undefined") {
+    throw new Error("Cookie name is required");
+  }
+
   var currentValue;
   var cookies = document.cookie.split("; ");
   for (var cookie of cookies) {
@@ -50,6 +58,9 @@ function getCookie(cookieName) {
 }
 
 function deleteCookie(cookieName) {
+  if (typeof cookieName === "undefined") {
+    throw new Error("Cookie name is required");
+  }
   document.cookie = cookieName + "=''; expires=Thu, 01 Jan 2020 00:00:00 UTC";
 }
 
