@@ -5,6 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#client-side-technologies">Client Side Technologies</a></li>
+    <li><a href="#advanced-javascript">Advanced Javascript</a></li>
     <li><a href="#c-programming-language">C Programming Language</a></li>
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
@@ -48,6 +49,40 @@
 - 2. Floating Child
 - 3. Typing Message
 - 4. Advertising
+
+#### Lab 6
+
+- 1. Lecture Task 1
+- 2. Lecture Task 2
+- 3. Welcome Page
+- 4. Slide Show
+- 5. Marbles
+- 6. Calculator
+
+#### Lab 7
+
+- 1. Context Menu
+- 2. Custom Event
+- 3. Form Confirmation
+
+#### Lab 8
+
+- 1. Session & Persistent Cookie
+- 2. Text Style
+- 3. DOM Assignment
+- 4. Card Generator
+- 5. Moving Pictures
+
+<a id="advanced-javascript"></a>
+
+## Advanced Javascript
+
+#### Lab 1 (Object + Function Arguments Object)
+
+- Linked List Object
+- Array Reverse
+- Add Numbers
+- Two Params
 
 <a id="c-programming-language"></a>
 
