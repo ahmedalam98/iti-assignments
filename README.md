@@ -84,7 +84,7 @@
 - Add Numbers
 - Two Params
 
-#### Lab 1 (Closure + IIFE)
+#### Lab 2 (Closure + IIFE)
 
 - Generate setters & getters for dynamic properties using IIFE & Closure.
 
