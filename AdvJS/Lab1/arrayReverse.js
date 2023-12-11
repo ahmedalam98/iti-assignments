@@ -10,8 +10,7 @@ function arrayReverse2(oldArr) {
 }
 
 function arrayReverse3() {
-  console.log(Array.prototype.slice.call(arguments));
   var arr = Array.prototype.slice.call(arguments);
 
-  return arr;
+  return arr.reverse();
 }
