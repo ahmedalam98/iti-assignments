@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1702986875 source:d:\work\instructor\ds\intake44\mobile\day1\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1702986926 d:\work\instructor\ds\intake44\mobile\day1\include\linkedlist.h
+	"Node.h"
+	<iostream>
+
+1702986041 d:\work\instructor\ds\intake44\mobile\day1\include\node.h
+
+1703036832 source:e:\iti-tasks\datastructure\day1\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1703037030 e:\iti-tasks\datastructure\day1\include\linkedlist.h
+	"Node.h"
+	<iostream>
+
+1702986041 e:\iti-tasks\datastructure\day1\include\node.h
+
+1703057622 source:d:\iti\iti-assignments\ds\day1\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1703057520 d:\iti\iti-assignments\ds\day1\include\linkedlist.h
+	"Node.h"
+	<iostream>
+
+1702986041 d:\iti\iti-assignments\ds\day1\include\node.h
+
+1703058080 source:d:\iti\iti-assignments\ds\linked list\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1703266839 d:\iti\iti-assignments\ds\linked list\include\linkedlist.h
+	"Node.h"
+	<iostream>
+
+1702986041 d:\iti\iti-assignments\ds\linked list\include\node.h
+
