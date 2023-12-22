@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1703170487 source:d:\iti\8-ds\code\3\bubblesort\main.cpp
+	<iostream>
+	"Linkedlist.h"
+
+1703170045 d:\iti\8-ds\code\3\bubblesort\include\linkedlist.h
+	<iostream>
+	"Node.h"
+
+1687257271 d:\iti\8-ds\code\3\bubblesort\include\node.h
+
+1703232063 source:d:\iti\iti-assignments\ds\bubblesort\main.cpp
+	<iostream>
+	"Linkedlist.h"
+
+1703245915 d:\iti\iti-assignments\ds\bubblesort\include\linkedlist.h
+	<iostream>
+	"Node.h"
+
+1703228686 d:\iti\iti-assignments\ds\bubblesort\include\node.h
+
