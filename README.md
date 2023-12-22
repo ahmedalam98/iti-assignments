@@ -277,6 +277,8 @@
 
 <a id="data-structures-and-algorithms"></a>
 
+## Data Structures and Algorithms
+
 #### Task 1
 
 - Linked List
