@@ -9,6 +9,7 @@
     <li><a href="#c-programming-language">C Programming Language</a></li>
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
+    <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
   </ol>
 </details>
 
@@ -87,6 +88,15 @@
 #### Lab 2 (Closure + IIFE)
 
 - Generate setters & getters for dynamic properties using IIFE & Closure.
+
+#### Lab 3 (Object)
+
+- Sequence List
+
+#### Lab 4 (OOP)
+
+- Shape, Rectangle, and Square constructor functions.
+- Vehicles classes inheritence .
 
 <a id="c-programming-language"></a>
 
@@ -264,3 +274,21 @@
 
 - Add XSLT files for 6 XML tasks to meet the required HTML. <br/>
   (You will need an online editor to see the result: https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
+
+<a id="data-structures-and-algorithms"></a>
+
+#### Task 1
+
+- Linked List
+
+#### Task 2
+
+- Stack & Simple Queue using linked list
+
+#### Task 3
+
+- Bubble Sort & Binary Search algorithm
+
+#### Task 4
+
+- Tree GetMaxDepth
