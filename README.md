@@ -1,4 +1,12 @@
+<div id="top"></div>
+
 # Information Technology Institute Assignments
+
+<div align="center">
+      <a href="https://iti.gov.eg/iti/home">
+       <img src="./assets/iti-logo.png" alt="Logo" width="80" height="80">
+      </a>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -73,6 +81,8 @@
 - 3. DOM Assignment
 - 4. Card Generator
 - 5. Moving Pictures
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <a id="advanced-javascript"></a>
 
@@ -186,6 +196,8 @@
 
 - Single line editor program - Dynamic Allocation
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a id="object-oriented-programming-in-c"></a>
 
 ## Object Oriented Programming in C++
@@ -258,6 +270,8 @@
 
 - Color Class Pointer to Pointer
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a id="extensible-markup-language-xml"></a>
 
 ## Extensible Markup Language ( XML )
@@ -294,3 +308,5 @@
 #### Task 4
 
 - Tree GetMaxDepth
+
+<p align="right">(<a href="#top">back to top</a>)</p>
