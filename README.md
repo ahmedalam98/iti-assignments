@@ -29,38 +29,38 @@
 
 ## Client Side Technologies
 
-#### Lab 1
+#### Task 1
 
 - Add basic HTML tags & CSS basic styles for headers, paragraphs, and Images
 - Add an image map to redirect to social media platforms
 
-#### Lab 2
+#### Task 2
 
 - Add register & login forms UI only
 - Implement the layout using an HTML table ( not allowed to use flex or grid )
 - Use <strong>Formspree</strong> API to post register info
 
-#### Lab 3
+#### Task 3
 
 - Display headlines with JS
 - Sum function using prompt dialog box
 - Divisible numbers function
 - Range display function
 
-#### Lab 4
+#### Task 4
 
 - 1. String & RegEx objects
 - 2. Array object
 - 3. Math object
 
-#### Lab 5
+#### Task 5
 
 - 1. Object Object
 - 2. Floating Child
 - 3. Typing Message
 - 4. Advertising
 
-#### Lab 6
+#### Task 6
 
 - 1. Lecture Task 1
 - 2. Lecture Task 2
@@ -69,13 +69,13 @@
 - 5. Marbles
 - 6. Calculator
 
-#### Lab 7
+#### Task 7
 
 - 1. Context Menu
 - 2. Custom Event
 - 3. Form Confirmation
 
-#### Lab 8
+#### Task 8
 
 - 1. Session & Persistent Cookie
 - 2. Text Style
@@ -89,22 +89,22 @@
 
 ## Advanced Javascript
 
-#### Lab 1 (Object + Function Arguments Object)
+#### Task 1 (Object + Function Arguments Object)
 
 - Linked List Object
 - Array Reverse
 - Add Numbers
 - Two Params
 
-#### Lab 2 (Closure + IIFE)
+#### Task 2 (Closure + IIFE)
 
 - Generate setters & getters for dynamic properties using IIFE & Closure.
 
-#### Lab 3 (Object)
+#### Task 3 (Object)
 
 - Sequence List
 
-#### Lab 4 (OOP)
+#### Task 4 (OOP)
 
 - Shape, Rectangle, and Square constructor functions.
 - Vehicles classes inheritence .
@@ -113,7 +113,7 @@
 
 ## JQuery
 
-#### Lab 1
+#### Task 1
 
 - Single page app with buttons each button targets a container
 
