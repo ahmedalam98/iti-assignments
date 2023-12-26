@@ -4,7 +4,7 @@
 
 <div align="center">
       <a href="https://iti.gov.eg/iti/home">
-       <img src="./assets/iti-logo.png" alt="Logo" width="80" height="80">
+       <img src="./assets/iti-logo.png" alt="Logo" width="100" height="150">
       </a>
 </div>
 
