@@ -14,6 +14,7 @@
   <ol>
     <li><a href="#client-side-technologies">Client Side Technologies</a></li>
     <li><a href="#advanced-javascript">Advanced Javascript</a></li>
+    <li><a href="#jquery">jQuery</a></li>
     <li><a href="#c-programming-language">C Programming Language</a></li>
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
@@ -107,6 +108,14 @@
 
 - Shape, Rectangle, and Square constructor functions.
 - Vehicles classes inheritence .
+
+<a id="jquery"></a>
+
+## JQuery
+
+#### Lab 1
+
+- Single page app with buttons each button targets a container
 
 <a id="c-programming-language"></a>
 
