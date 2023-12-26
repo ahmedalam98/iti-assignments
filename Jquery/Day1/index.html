@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Day 1</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="buttons">
+      <button class="button" id="aboutBtn">About</button>
+      <button class="button" id="galleryBtn">Gallery</button>
+      <div class="dropdown">
+        <button class="button" id="servicesBtn">Services</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="#">Service 1</a>
+          <a href="#">Service 2</a>
+          <a href="#">Service 3</a>
+        </div>
+      </div>
+      <button class="button" id="complainBtn">Complain</button>
+    </div>
+
+    <div id="aboutDiv">
+      <h3>Story about a Snow Man</h3>
+    </div>
+
+    <div id="galleryDiv">
+      <button id="prev">
+        <img src="./assets/left.png" alt="prev" width="25" height="25" />
+      </button>
+
+      <img
+        id="slideshowImage"
+        src="./assets/1.jpg"
+        alt="Image 1"
+        width="200"
+        height="200"
+      />
+
+      <button id="next">
+        <img src="./assets/right.png" alt="next" width="25" height="25" />
+      </button>
+    </div>
+
+    <div id="complainDiv">
+      <input id="nameInput" type="text" placeholder="Name" />
+      <input id="emailInput" type="text" placeholder="Email" />
+      <input id="phoneInput" type="number" placeholder="Phone" />
+      <textarea id="complainInput" placeholder="Complain"></textarea>
+      <button id="submit">Send</button>
+    </div>
+
+    <div id="submittedDiv">
+      <h2 style="margin-bottom: 48px">Submitted Data</h2>
+      <p id="submittedName"></p>
+      <p id="submittedEmail"></p>
+      <p id="submittedPhone"></p>
+      <p id="submittedComplain"></p>
+      <button id="backToEdit">Back to Edit</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
