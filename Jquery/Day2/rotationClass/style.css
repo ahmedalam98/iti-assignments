@@ -35,8 +35,3 @@ button {
 button:hover {
   box-shadow: 0 0 0 0 #fff, 0 0 0 2px #1de9b6;
 }
-
-.rotate {
-  transform: rotate(360deg) scale(2);
-  transition: transform 1.5s ease;
-}
