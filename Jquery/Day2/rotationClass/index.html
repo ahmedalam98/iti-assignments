@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotation Class</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div id="btn-container">
+      <button class="run">Rotate Image</button>
+    </div>
+
+    <div id="img-container">
+      <img src="./assets/1.jpg" width="150" height="150" />
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".run").click(function () {
+          $("img").addClass("rotate");
+        });
+      });
+    </script>
+  </body>
+</html>

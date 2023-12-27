@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <title>Drag & Drop Interaction</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Roboto;
+      }
+
+      #item {
+        border-radius: 10px;
+      }
+
+      #blackhole {
+        margin-right: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drag & Drop Interaction</h1>
+    <hr />
+
+    <img id="blackhole" src="./assets/3.jpg" />
+    <img id="item" src="./assets/2.jpg" width="140" height="200" />
+    <script>
+      $("#item").one("mouseover", function () {
+        $(this).effect("shake");
+      });
+
+      $("#item").draggable();
+
+      $("#blackhole").droppable({
+        drop: function () {
+          $("#item").hide("explode");
+        },
+      });
+    </script>
+  </body>
+</html>
