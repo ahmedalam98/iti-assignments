@@ -117,6 +117,12 @@
 
 - Single page app with buttons each button targets a container
 
+#### Task 2 ( Animation functions )
+
+- Animated div
+- Rotation class
+- Drap & Drop interaction
+
 <a id="c-programming-language"></a>
 
 ## C Programming Language
