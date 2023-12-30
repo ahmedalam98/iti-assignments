@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Color Changer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="myText">Change my color with the buttons below</h1>
+
+      <div class="range-container">
+        <div class="changer">
+          <span>Red : </span>
+          <input type="range" id="redRange" min="0" max="255" value="0" />
+        </div>
+
+        <div class="changer">
+          <span>Green : </span>
+          <input type="range" id="greenRange" min="0" max="255" value="0" />
+        </div>
+
+        <div class="changer">
+          <span>Blue : </span>
+          <input type="range" id="blueRange" min="0" max="255" value="0" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

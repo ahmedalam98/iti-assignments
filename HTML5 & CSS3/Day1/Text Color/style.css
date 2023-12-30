@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.range-container input[type="range"] {
+  margin: 0 10px;
+}
+
+.changer {
+  margin: 0 20px;
+}
+
+#redRange {
+  accent-color: red;
+}
+
+#greenRange {
+  accent-color: green;
+}
+
+#blueRange {
+  accent-color: blue;
+}
