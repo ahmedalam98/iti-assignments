@@ -65,11 +65,11 @@ function handleSound() {
 }
 
 function handleBackBtn() {
-  video.currentTime -= 10;
+  video.currentTime -= 2;
 }
 
 function handleForwardBtn() {
-  video.currentTime += 10;
+  video.currentTime += 2;
 }
 
 function handleSpeedBtn() {
