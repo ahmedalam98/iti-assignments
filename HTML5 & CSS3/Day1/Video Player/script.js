@@ -4,6 +4,7 @@
 
 const video = document.querySelector("video");
 const timeRange = document.getElementById("timeRange");
+const timeFormat = document.getElementById("time");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
 const soundButton = document.getElementById("soundBtn");
@@ -28,8 +29,20 @@ function handleTimeUpdate() {
   const current = Math.floor(video.currentTime);
   const total = Math.floor(video.duration);
   const progress = (current / total) * 100;
-
   timeRange.value = progress;
+
+  let currentMin = Math.floor(current / 60);
+  let currentSec = current % 60;
+  let totalMin = Math.floor(total / 60);
+  let totalSec = total % 60;
+
+  // Ensure leading zeros for single-digit minutes and seconds
+  currentMin = currentMin < 10 ? `0${currentMin}` : currentMin;
+  currentSec = currentSec < 10 ? `0${currentSec}` : currentSec;
+  totalMin = totalMin < 10 ? `0${totalMin}` : totalMin;
+  totalSec = totalSec < 10 ? `0${totalSec}` : totalSec;
+
+  timeFormat.innerText = `${currentMin}:${currentSec} / ${totalMin}:${totalSec}`;
 }
 
 function updateTime() {

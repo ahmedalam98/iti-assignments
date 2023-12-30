@@ -21,17 +21,30 @@ video {
   border-radius: 10px;
 }
 
+input[name="length"] {
+  width: 500px;
+}
+
+input[type="range"] {
+  accent-color: #63549c;
+}
+
 .multimedia {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   margin-top: 3rem;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -39,16 +52,7 @@ video {
   width: 640px;
   margin-top: 1rem;
   display: flex;
-  align-items: space-between;
   justify-content: space-between;
-}
-
-input[name="length"] {
-  position: absolute;
-  top: 69%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
 }
 
 .btn {
