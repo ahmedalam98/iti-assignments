@@ -1,0 +1,90 @@
+html {
+  font-family: cursive, sans-serif;
+  color: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+video {
+  border-radius: 10px;
+}
+
+.multimedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  width: 640px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+input[name="length"] {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.btn:active {
+  background-image: none;
+  color: black;
+  transition: 0s;
+}
+
+#play.btn:focus,
+#pause.btn:focus {
+  background-image: none;
+  color: black;
+  transition: 0s;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */

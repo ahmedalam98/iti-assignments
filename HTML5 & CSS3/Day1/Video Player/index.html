@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Video Player</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="multimedia">
+      <video
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        width="640"
+        height="360"
+      ></video>
+    </div>
+
+    <div class="container">
+      <input
+        id="timeRange"
+        type="range"
+        name="length"
+        class="slider"
+        min="0"
+        max="100"
+        step="1"
+        value="0"
+      />
+
+      <div class="controls">
+        <div class="container">
+          <button id="play" class="btn" title="Toggle Play">►</button>
+          <button id="pause" class="btn" title="Pause">❚ ❚</button>
+
+          <input
+            id="soundRange"
+            type="range"
+            name="sound"
+            class="slider"
+            min="0"
+            max="100"
+            step="5"
+            value="50"
+          />
+          <button id="soundBtn" class="btn">🔊</button>
+          <!-- <button class="btn" title="Toggle Mute">🔇</button> -->
+        </div>
+
+        <div class="container">
+          <button id="backBtn" class="btn">« 10</button>
+          <button id="forwardBtn" class="btn">10 »</button>
+          <button id="speedBtn" class="btn">1x</button>
+          <button id="fullscreenBtn" class="btn">⛶</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
