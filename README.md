@@ -149,6 +149,8 @@
 - Default Parameters
 - Symbol replace method
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a id="c-programming-language"></a>
 
 ## C Programming Language
