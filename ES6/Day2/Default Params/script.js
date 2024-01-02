@@ -4,10 +4,16 @@ function courseDefaults({
   courseOwner = "ITI",
   ...props
 }) {
-  if (Object.keys(props).length > 0) {
-    throw Error(
-      "Only properties : courseName, courseDuration, and courseOwner are allowed to use."
-    );
+  const myProps = ["courseName", "courseDuration", "courseOwner"];
+
+  for (const prop in props) {
+    if (!myProps.includes(prop)) {
+      throw Error(
+        `Property "${prop}" is not allowed. Only properties: ${myProps.join(
+          ", "
+        )} are allowed.`
+      );
+    }
   }
 
   console.log(
@@ -17,6 +23,8 @@ function courseDefaults({
     Owner: ${courseOwner} `
   );
 }
+
+////////////////////////////////////////////////////////////
 
 courseDefaults({});
 
