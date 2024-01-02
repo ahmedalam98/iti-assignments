@@ -15,6 +15,8 @@
     <li><a href="#client-side-technologies">Client Side Technologies</a></li>
     <li><a href="#advanced-javascript">Advanced Javascript</a></li>
     <li><a href="#jquery">jQuery</a></li>
+    <li><a href="#html5-css3">HTML5 & CSS3</a></li>
+    <li><a href="#es-next">ES Next</a></li>
     <li><a href="#c-programming-language">C Programming Language</a></li>
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
@@ -122,6 +124,30 @@
 - Animated div
 - Rotation class
 - Drap & Drop interaction
+
+<a id="html5-css3"></a>
+
+## HTML5 & CSS3
+
+#### Task 1
+
+- Custom Video Player with JS 🚀
+- Text rgb color changer with range inputs
+
+<a id="es-next"></a>
+
+## ES Next
+
+#### Task 1
+
+- Swap Variables using Destructuring
+- Array Methods
+- Rest & Spread Operators
+
+#### Task 2
+
+- Default Parameters
+- Symbol replace method
 
 <a id="c-programming-language"></a>
 
