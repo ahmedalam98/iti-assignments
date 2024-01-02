@@ -12,28 +12,17 @@ body {
   background-repeat: no-repeat;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 1.6rem;
-}
-
 video {
   border-radius: 10px;
-}
-
-input[name="length"] {
-  width: 500px;
-}
-
-input[type="range"] {
-  accent-color: #63549c;
+  width: 55%;
+  height: auto;
 }
 
 .multimedia {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .parent {
@@ -46,6 +35,14 @@ input[type="range"] {
 .container {
   display: flex;
   justify-content: center;
+}
+
+input[name="length"] {
+  width: 500px;
+}
+
+input[type="range"] {
+  accent-color: #63549c;
 }
 
 .controls {
