@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function populateArtistSelect(artists) {
     var artistSelect = document.getElementById("artistSelect");
 
+    // Clear previous options
+    artistSelect.innerHTML = "";
+
     artists.forEach(function (artist) {
       var option = document.createElement("option");
       option.value = artist.value;
