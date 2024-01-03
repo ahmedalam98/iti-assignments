@@ -12,35 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
       if (xhr.status >= 200 && xhr.status < 300) {
         // Parse the JSON response
         var data = JSON.parse(xhr.responseText);
-
         console.log(data);
 
-        // Populate the Band select options
-        var bandSelect = document.getElementById("bandSelect");
-
-        for (var band in data) {
-          if (data.hasOwnProperty(band)) {
-            var option = document.createElement("option");
-            option.value = band.toLowerCase();
-            option.textContent = band;
-            bandSelect.appendChild(option);
-          }
-        }
-
-        // Initial population of artist select
-        populateArtistSelect(data[bandSelect.value]);
-
-        // Change artists for band select change
-        bandSelect.addEventListener("change", function () {
-          populateArtistSelect(data[bandSelect.value]);
-        });
+        populateBandSelect(data);
       }
     }
   };
 
+  function populateBandSelect(bands) {
+    var bandSelect = document.getElementById("bandSelect");
+
+    for (var band in bands) {
+      if (bands.hasOwnProperty(band)) {
+        var option = document.createElement("option");
+        option.value = band.toLowerCase();
+        option.textContent = band;
+        bandSelect.appendChild(option);
+      }
+    }
+
+    // Initial population of artist select
+    populateArtistSelect(bands[bandSelect.value]);
+
+    // Change artists for band select change
+    bandSelect.addEventListener("change", function () {
+      populateArtistSelect(bands[bandSelect.value]);
+    });
+  }
+
   function populateArtistSelect(artists) {
     var artistSelect = document.getElementById("artistSelect");
-    artistSelect.innerHTML = "";
 
     artists.forEach(function (artist) {
       var option = document.createElement("option");
