@@ -134,6 +134,11 @@
 - Custom Video Player with JS 🚀
 - Text rgb color changer with range inputs
 
+#### Task 2
+
+- Path triangle & MathML library
+- Local storage pollyfill using cookies
+
 <a id="es-next"></a>
 
 ## ES Next
@@ -148,6 +153,12 @@
 
 - Default Parameters
 - Symbol replace method
+
+#### Task 3
+
+- ES6 Classes
+- AJAX Request using XMLHttpRequest
+- AJAX Request using Fetch API & Async Await
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
