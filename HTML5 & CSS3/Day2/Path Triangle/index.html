@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Pythagorean Triangle</title>
+  </head>
+  <body>
+    <h1>Pythagorean Theorem</h1>
+
+    <div>
+      <svg height="300" width="400">
+        <!-- Triangle -->
+        <path
+          d="M 300 250 L 300 50 L 100 250 Z"
+          fill="#7F00FF"
+          stroke="black"
+          stroke-width="3"
+        />
+
+        <!-- Side labels -->
+        <text x="320" y="165">a</text>
+        <text x="210" y="280">b</text>
+        <text x="160" y="150">c</text>
+      </svg>
+    </div>
+
+    <!-- MathML for Pythagorean theorem -->
+    <div>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mi>c</mi>
+          <mo>=</mo>
+          <msqrt>
+            <mrow>
+              <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </math>
+    </div>
+  </body>
+</html>

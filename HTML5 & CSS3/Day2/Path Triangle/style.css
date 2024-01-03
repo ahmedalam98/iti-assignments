@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  fill: black;
+}
+
+math {
+  font-weight: 600;
+}
