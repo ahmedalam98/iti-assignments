@@ -1,0 +1,36 @@
+body {
+  font-family: cursive, sans-serif;
+}
+
+#header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #7500d1;
+  font-weight: bold;
+}
+
+#outputTable {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+#outputTable th,
+#outputTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+#outputTable th {
+  background-color: #7500d1;
+  color: white;
+  text-align: center;
+}
