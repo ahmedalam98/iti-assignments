@@ -44,4 +44,6 @@ if (window.localStorage) {
   myLocalStorage.setItem("userName", "Ahmed Alam El-Deen");
   myLocalStorage.setItem("age", "25");
   myLocalStorage.getItem("userName");
+
+  console.log(myLocalStorage.cookiesObj);
 }
