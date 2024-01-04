@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script1.js"></script>
+    <title>Register Page</title>
+  </head>
+
+  <body>
+    <h1>User Registration</h1>
+
+    <div class="container">
+      <div class="layout">
+        <div class="firstCol">
+          <form autocomplete="off">
+            <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" />
+            </div>
+            <br />
+            <div class="field">
+              <label for="age">Age:</label>
+              <input type="number" id="age" />
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <div class="secondCol">
+            <label for="male">
+              <img src="./1.jpg" alt="Male Icon" width="150" height="250" />
+              <input type="radio" id="male" name="gender" value="male" />
+              Male
+            </label>
+
+            <label for="female">
+              <img src="./2.jpg" alt="Female Icon" width="250" height="250" />
+              <input type="radio" id="female" name="gender" value="female" />
+              Female
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button id="register">Register</button>
+      <button id="clear">Clear</button>
+    </div>
+  </body>
+</html>
