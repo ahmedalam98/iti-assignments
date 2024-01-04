@@ -138,6 +138,7 @@
 
 - Path triangle & MathML library
 - Local storage pollyfill using cookies
+- Local storage registeraion & profile page
 
 <a id="es-next"></a>
 
@@ -159,6 +160,7 @@
 - ES6 Classes
 - AJAX Request using XMLHttpRequest
 - AJAX Request using Fetch API & Async Await
+- JSON Placeholder API
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
