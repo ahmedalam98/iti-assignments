@@ -38,7 +38,7 @@ if (window.localStorage) {
     },
   };
 
-  window.myLocalStorage = myLocalStorage;
+  window.localStorage = myLocalStorage;
 
   myLocalStorage.clear();
   myLocalStorage.setItem("userName", "Ahmed Alam El-Deen");
