@@ -1,5 +1,5 @@
 html {
-  font-family: Roboto, poppins, sans-serif;
+  font-family: cursive, sans-serif;
 }
 
 h1 {
@@ -16,13 +16,21 @@ h1 {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  grid-template-columns: 1.5fr 2fr;
 }
 
 label {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 #age {
@@ -47,23 +55,31 @@ img {
 }
 
 input[type="radio"] {
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 20px;
 }
 
-.btn {
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 32px;
 }
 
-.btn button {
+button {
   padding: 12px 24px;
-  border: none;
   border-radius: 4px;
   background-color: rgb(43, 42, 42);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  border: 2px solid rgb(43, 42, 42);
+  color: rgb(43, 42, 42);
 }
