@@ -59,6 +59,12 @@ input[type="radio"] {
   margin-top: 20px;
 }
 
+#color {
+  margin-left: 8px;
+  width: 100px;
+  padding: 3px;
+}
+
 .btn-container {
   display: flex;
   justify-content: center;

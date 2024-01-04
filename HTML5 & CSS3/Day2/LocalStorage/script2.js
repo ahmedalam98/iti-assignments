@@ -1,5 +1,6 @@
 // Display user profile
 const userProfile = document.querySelector("#userProfile");
+const userColor = localStorage.getItem("selectedColor");
 
 function displayUserProfile() {
   console.log("Retrieved from localStorage.");
@@ -9,9 +10,7 @@ function displayUserProfile() {
       <img style="margin: 2.5rem auto;" src="${getProfilePic(
         localStorage.getItem("userGender")
       )}" />
-      <h2 style="color: ${getFontColor(
-        localStorage.getItem("userGender")
-      )}">${localStorage.getItem("userName")}</h2>
+      <h2 style="color: ${userColor}">${localStorage.getItem("userName")}</h2>
       <h3>Age: ${localStorage.getItem("userAge")}</h3>
       <h3>Visits: ${localStorage.getItem("visitCount")}</h3>
     </div>
@@ -28,10 +27,6 @@ displayUserProfile();
 window.addEventListener("beforeunload", increaseVisitCount);
 
 /////////////////////////////////////////
-
-function getFontColor(gender) {
-  return gender === "male" ? "blue" : "palevioletred";
-}
 
 function getProfilePic(gender) {
   return gender === "male" ? "./1.jpg" : "./2.jpg";
