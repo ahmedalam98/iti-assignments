@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // console.log(fetch("./rockbands.json"));
   async function getBands() {
     try {
       var response = await fetch("./rockbands.json");

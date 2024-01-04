@@ -2,15 +2,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
   background-image: url(./assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 10px;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: cursive, sans-serif;
 }
 
 .container {
   width: 500px;
-
+  margin-top: -10rem;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,13 +38,14 @@ label {
   font-weight: bold;
 }
 
-.custom-select {
+select {
   margin-top: 5px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
   font-size: 16px;
+  font-family: cursive, sans-serif;
   width: 100%;
 }
 
@@ -52,6 +56,7 @@ button {
   background-color: #2a9d8f;
   color: #fff;
   font-size: 18px;
+  font-family: cursive, sans-serif;
   cursor: pointer;
   width: 60%;
   margin: auto;
