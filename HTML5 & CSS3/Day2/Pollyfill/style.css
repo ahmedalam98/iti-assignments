@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1c1b18;
+  overflow-y: hidden;
+}
+
+#btn {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+  width: 220px;
+  height: 80px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top: -6rem;
+  cursor: pointer;
+  color: #3d432c;
+  border-color: #333029;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(#eae0c2, #ccc2a6);
+}
+
+#btn:hover {
+  background: linear-gradient(#ccc2a6, #eae0c2);
+}
