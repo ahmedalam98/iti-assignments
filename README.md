@@ -140,6 +140,11 @@
 - Local storage pollyfill using cookies
 - Local storage registeraion & profile page
 
+#### Task 3
+
+- HTML5 Canvas : Gradient - Napoli logo - Line animation
+- CSS3 Blink & Card
+
 <a id="es-next"></a>
 
 ## ES Next
