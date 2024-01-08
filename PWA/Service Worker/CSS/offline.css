@@ -1,0 +1,17 @@
+body {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+}

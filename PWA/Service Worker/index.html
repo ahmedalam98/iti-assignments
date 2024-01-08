@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Worker</title>
+    <link href="./CSS/main.css" rel="stylesheet" />
+    <link href="./manifest_and_icons/manifest.json" rel="manifest" />
+  </head>
+
+  <body>
+    <h1>Welcome Page</h1>
+
+    <div class="container">
+      <a href="HTML/page1.html">Page 1 ( Cached )</a>
+      <a href="page3.html">Page 2 ( Uncached )</a>
+    </div>
+
+    <div class="btn-container">
+      <button id="install">Download App</button>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        // You can limit the scope of the service worker to a specific directory. {scope: '/HTML/'}
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("sw.js")
+
+            .then((reg) => {
+              console.log("Service worker registered", reg);
+            })
+            .catch((err) => {
+              console.error("Regestiration failed", err);
+            });
+        });
+      }
+    </script>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>

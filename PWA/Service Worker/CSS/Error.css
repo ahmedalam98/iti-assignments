@@ -1,0 +1,41 @@
+body {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 4em;
+  color: red;
+  margin-top: 10px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.error-icon.animated {
+  animation: shake 1s ease-in-out infinite;
+}
