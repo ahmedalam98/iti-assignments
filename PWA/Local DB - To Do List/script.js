@@ -10,6 +10,8 @@ async function getTasks() {
 
 let tasks = [];
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
 let changeDom = (task) => {
   let taskList = document.getElementById("tasks");
   let taskItem = document.createElement("li");
@@ -30,7 +32,7 @@ let changeDom = (task) => {
 
   taskItem.innerHTML = `
     <span class="App__taskItem" style="color: black; ">
-    ${task.title}  -->  Date : ${task.day}/${task.month}/${task.year} Time:${task.hour}:${task.min}
+    ${task.title}  -->  Date : ${task.day}/${task.month}/${task.year} Time:${task.hour}:${task.min}:${task.sec}
     </span>
     `;
   taskItem.appendChild(deleteButton);
@@ -43,6 +45,7 @@ let changeDom = (task) => {
   }
 
   updateAppBodyBorderRadius();
+  clearFields();
 };
 
 function updateAppBodyBorderRadius() {
@@ -57,6 +60,19 @@ function updateAppBodyBorderRadius() {
     todoBody.style.borderBottomRightRadius = "0";
   }
 }
+
+function clearFields() {
+  // console.log("clearFields called");
+  document.getElementById("title").value = "";
+  document.getElementById("sec").value = "";
+  document.getElementById("min").value = "";
+  document.getElementById("hour").value = "";
+  document.getElementById("day").selectedIndex = 0;
+  document.getElementById("month").selectedIndex = 0;
+  document.getElementById("year").selectedIndex = 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
 
 function notification(task) {
   if (Notification.permission == "granted") {
@@ -88,6 +104,8 @@ function notification(task) {
 document.getElementById("add").addEventListener("click", () => {
   idbApp.addTask();
 });
+
+//////////////////////////////////////////////////////////////////////////////////////////
 
 const app = (() => {
   "use strict";
@@ -124,7 +142,7 @@ const app = (() => {
   }
 })();
 
-///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 
 var idbApp = (function () {
   "use strict";
