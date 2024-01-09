@@ -17,6 +17,7 @@
     <li><a href="#jquery">jQuery</a></li>
     <li><a href="#html5-css3">HTML5 & CSS3</a></li>
     <li><a href="#es-next">ES Next</a></li>
+    <li><a href="#pwa">PWA</a></li>
     <li><a href="#c-programming-language">C Programming Language</a></li>
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
@@ -168,6 +169,18 @@
 - JSON Placeholder API
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<a id="pwa"></a>
+
+## Progressive Web Apps
+
+#### Task 1
+
+- Add a service worker to cache custom error & offline pages 🚀
+
+#### Task 2
+
+- To-Do List App with indexedDB library 🚀
 
 <a id="c-programming-language"></a>
 
