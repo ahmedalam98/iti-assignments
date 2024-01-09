@@ -1,0 +1,20 @@
+body {
+  background-color: #515151;
+  font-family: cursive !important;
+}
+
+.App__header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.App__body {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.tasks {
+  background-color: #b9ddba;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
