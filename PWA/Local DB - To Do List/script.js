@@ -85,6 +85,7 @@ function notification(task) {
       task.sec
     );
     const oldDate = new Date(task.date);
+    const myAlarm = oldDate - new Date();
 
     // console.log(oldDate- new Date());
 
@@ -97,7 +98,7 @@ function notification(task) {
         ChangedElement.style.fontWeight = "0.5rem";
       });
       idbApp.updateTask(task);
-    }, oldDate - new Date());
+    }, myAlarm);
   }
 }
 
@@ -124,6 +125,7 @@ const app = (() => {
     });
   });
 
+  // Register service worker to handle notifications library
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
@@ -143,7 +145,9 @@ const app = (() => {
 })();
 
 //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 
+// idbApp ----> your interface ( UI functions ) for IDB
 var idbApp = (function () {
   "use strict";
 
@@ -153,10 +157,18 @@ var idbApp = (function () {
     return;
   }
 
+  // TODO 1 - Creating the database
+  // todo ----> is the database name I have chosen
+  // 2 ----> is the version of the database
+  // upgradeDB ----> is a callback function that will be called if the version of the database changes (if you increment the version number)\
+  // dbPromise ----> is a promise that will be resolved when the database is opened
   var dbPromise = idb.open("todo", 2, function (upgradeDB) {
     switch (upgradeDB.oldVersion) {
       case 0:
       case 1:
+        // console.log("Creating the tasks table");
+
+        // create the tasks table with primary key 'title'
         upgradeDB.createObjectStore("tasks", { keyPath: "title" });
         break;
     }
@@ -192,12 +204,17 @@ var idbApp = (function () {
     };
 
     tasks.push(task);
-
-    //i//dbApp.addTask(task);
     changeDom(task);
     notification(task);
+
     dbPromise.then(function (db) {
+      // transaction ----> is the (permission) to add or delete or update data in the database [readwrite, readonly, versionchange, null]
+      // tasks ----> is the name of the table I will manipulate, not the whole database
+
+      // tx ----> is the transaction object that allows me to manipulate the data in the database
       var tx = db.transaction("tasks", "readwrite");
+
+      // store ----> is the reference to the table I will manipulate
       var store = tx.objectStore("tasks");
 
       return store.add(task);
@@ -225,7 +242,9 @@ var idbApp = (function () {
 
   function updateTask(task) {
     getByName(task.title).then(function (task) {
+      // toggle done task when time is up
       task.done = !task.done;
+
       dbPromise.then(function (db) {
         var tx = db.transaction("tasks", "readwrite");
         var store = tx.objectStore("tasks");
@@ -244,6 +263,7 @@ var idbApp = (function () {
     });
   }
 
+  // The functions we are exposing to the world
   return {
     addTask: addTask,
     getTasks: getTasks,
