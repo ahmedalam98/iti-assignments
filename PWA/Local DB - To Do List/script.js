@@ -60,7 +60,14 @@ function updateAppBodyBorderRadius() {
 
 function notification(task) {
   if (Notification.permission == "granted") {
-    let date = new Date(task.year, task.month, task.day, task.hour, task.min);
+    let date = new Date(
+      task.year,
+      task.month,
+      task.day,
+      task.hour,
+      task.min,
+      task.sec
+    );
     const oldDate = new Date(task.date);
 
     // console.log(oldDate- new Date());
