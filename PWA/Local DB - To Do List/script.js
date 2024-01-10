@@ -1,3 +1,7 @@
+/////////////////////////////////////////
+/* Pushing notifications of done tasks */
+/////////////////////////////////////////
+
 async function getTasks() {
   tasks = await idbApp.getTasks();
   tasks.forEach((todo) => {
@@ -11,6 +15,10 @@ async function getTasks() {
 let tasks = [];
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////
+/* DOM Manipulation & UI */
+///////////////////////////
 
 let changeDom = (task) => {
   let taskList = document.getElementById("tasks");
@@ -74,6 +82,10 @@ function clearFields() {
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////
+/* Notification Object & Helper Function ( timer ) */
+/////////////////////////////////////////////////////
+
 function notification(task) {
   if (Notification.permission == "granted") {
     let date = new Date(
@@ -87,7 +99,7 @@ function notification(task) {
     const oldDate = new Date(task.date);
     const myAlarm = oldDate - new Date();
 
-    // console.log(oldDate- new Date());
+    // console.log(oldDate - new Date());
 
     setTimeout(() => {
       navigator.serviceWorker.getRegistration().then((reg) => {
@@ -107,6 +119,10 @@ document.getElementById("add").addEventListener("click", () => {
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+/* Service Worker Registration & Notify Permission */
+/////////////////////////////////////////////////////
 
 const app = (() => {
   "use strict";
@@ -145,7 +161,10 @@ const app = (() => {
 })();
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////
+/* Creating IndexedDB Object ( Table & Primary Key) */
+//////////////////////////////////////////////////////
 
 // idbApp ----> your interface ( UI functions ) for IDB
 var idbApp = (function () {
@@ -174,6 +193,10 @@ var idbApp = (function () {
     }
   });
 
+  //////////////////////////////////////////////////////
+  /* CRUD Operations ( Create, Read, Update, Delete ) */
+  //////////////////////////////////////////////////////
+
   function addTask() {
     // TODO 3.3 - add objects to the products store
     let taskTitle = document.getElementById("title").value;
@@ -195,6 +218,7 @@ var idbApp = (function () {
       done: false,
       date: new Date(
         taskYear,
+        // months in JS start from 0
         taskMonth - 1,
         taskDay,
         taskHour,
@@ -217,6 +241,7 @@ var idbApp = (function () {
       // store ----> is the reference to the table I will manipulate
       var store = tx.objectStore("tasks");
 
+      // add ----> is the method related to the store object that allows me to add data to the table
       return store.add(task);
     });
   }
@@ -235,6 +260,8 @@ var idbApp = (function () {
     dbPromise.then(function (db) {
       var tx = db.transaction("tasks", "readwrite");
       var store = tx.objectStore("tasks");
+
+      // delete ----> is the method related to the store object that allows me to delete data from the table
       store.delete(taskTitle);
       return tx.complete;
     });
@@ -248,6 +275,8 @@ var idbApp = (function () {
       dbPromise.then(function (db) {
         var tx = db.transaction("tasks", "readwrite");
         var store = tx.objectStore("tasks");
+
+        // put ----> is the method related to the store object that allows me to update data in the table
         store.put(task);
         return tx.complete;
       });
@@ -259,6 +288,8 @@ var idbApp = (function () {
     return dbPromise.then(function (db) {
       var tx = db.transaction("tasks", "readonly");
       var store = tx.objectStore("tasks");
+
+      // get ----> is the method related to the store object that allows me to get data from the table
       return store.get(title);
     });
   }
