@@ -22,6 +22,7 @@
     <li><a href="#object-oriented-programming-in-c">Object Oriented Programming in C++</a></li>
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
     <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
+    <li><a href="#nosql">No SQL ( MongoDB )</a></li>
   </ol>
 </details>
 
@@ -382,5 +383,17 @@
 #### Task 4
 
 - Tree GetMaxDepth
+
+<a id="nosql"></a>
+
+## No SQL ( MongoDB )
+
+#### Task 1
+
+- Find & Insert Documents
+
+#### Task 2
+
+- CRUD Operations & Operators
 
 <p align="right">(<a href="#top">back to top</a>)</p>
