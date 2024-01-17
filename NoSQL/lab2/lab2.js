@@ -28,27 +28,11 @@ db.instructors.find({ courses: { $exists: true } }).forEach((ele) => {
 
 // g
 db.instructors
-  .find(
-    {
-      firstName: { $exists: true },
-      lastName: { $exists: true },
-    },
-    {
-      _id: 0,
-      result: {
-        $concat: [
-          "FullName : ",
-          { $concat: ["$firstName", " ", "$lastName"] },
-          ", Age : ",
-          { $toString: "$age" },
-        ],
-      },
-    }
-  )
-  .sort({
-    firstName: 1,
-    lastName: -1,
-  });
+  .find({ firstName: { $exists: true }, lastName: { $exists: true } })
+  .sort({ firstName: 1, lastName: -1 })
+  .forEach((ins) =>
+    print(`FullName: ${ins.firstName} ${ins.lastName}, Age: ${ins.age}`)
+  );
 
 // h
 db.instructors.find({
