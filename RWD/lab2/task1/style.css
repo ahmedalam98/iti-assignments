@@ -1,0 +1,55 @@
+html {
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+}
+
+.header,
+.middle,
+.footer {
+  grid-column: span 3;
+}
+
+/* ?? */
+.middle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.header,
+.footer {
+  background-color: rgb(146, 33, 166);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  background-color: rgb(156, 71, 107);
+  color: white;
+}
+
+.child1,
+.child3 {
+  background-color: rgb(131, 246, 246);
+  color: black;
+}
+
+.child1,
+.child2,
+.child3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
