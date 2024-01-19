@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  animation: changeColor 5s linear infinite;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: repeat(3, 75px);
+  grid-template-areas:
+    "side header header"
+    "side mid aside"
+    "footer footer aside";
+  gap: 20px;
+  animation: rotate 5s linear infinite;
+}
+
+.side,
+.header,
+.mid,
+.aside,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #ffffff;
+  min-height: 75px;
+  min-width: 75px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.side {
+  grid-area: side;
+}
+
+.header {
+  grid-area: header;
+}
+
+.mid {
+  grid-area: mid;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  animation: rotate 3s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  0%,
+  10% {
+    background-color: bisque;
+  }
+  25% {
+    background-color: lightblue;
+  }
+  35% {
+    background-color: rgb(255, 67, 29);
+  }
+  45% {
+    background-color: rgb(155, 19, 246);
+  }
+  55% {
+    background-color: rgb(26, 62, 222);
+  }
+  65% {
+    background-color: rgb(39, 241, 25);
+  }
+  75% {
+    background-color: rgb(233, 213, 34);
+  }
+  85% {
+    background-color: rgb(246, 33, 62);
+  }
+  90% {
+    background-color: rgb(17, 233, 211);
+  }
+  100% {
+    background-color: bisque;
+  }
+}
