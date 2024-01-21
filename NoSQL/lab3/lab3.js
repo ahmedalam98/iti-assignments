@@ -14,10 +14,10 @@ let studentsInfo = [
     isFired: false,
     facultyId: 1,
     courses: [
-      { courseId: 30, grade: 10 },
-      { courseId: 1, grade: 20 },
-      { courseId: 40, grade: 40 },
-      { courseId: 80, grade: 70 },
+      { courseId: 3, grade: 225 },
+      { courseId: 4, grade: 190 },
+      { courseId: 1, grade: 240 },
+      { courseId: 8, grade: 200 },
     ],
   },
   {
@@ -27,10 +27,10 @@ let studentsInfo = [
     isFired: false,
     facultyId: 2,
     courses: [
-      { courseId: 2, grade: 10 },
-      { courseId: 10, grade: 20 },
-      { courseId: 40, grade: 40 },
-      { courseId: 80, grade: 70 },
+      { courseId: 3, grade: 217 },
+      { courseId: 4, grade: 173 },
+      { courseId: 1, grade: 185 },
+      { courseId: 8, grade: 230 },
     ],
   },
   {
@@ -40,10 +40,10 @@ let studentsInfo = [
     isFired: true,
     facultyId: 3,
     courses: [
-      { courseId: 3, grade: 10 },
-      { courseId: 10, grade: 20 },
-      { courseId: 40, grade: 40 },
-      { courseId: 80, grade: 70 },
+      { courseId: 3, grade: 105 },
+      { courseId: 4, grade: 145 },
+      { courseId: 1, grade: 272 },
+      { courseId: 8, grade: 216 },
     ],
   },
   {
@@ -53,19 +53,19 @@ let studentsInfo = [
     isFired: false,
     facultyId: 4,
     courses: [
-      { courseId: 4, grade: 10 },
-      { courseId: 10, grade: 20 },
-      { courseId: 40, grade: 40 },
-      { courseId: 80, grade: 70 },
+      { courseId: 3, grade: 190 },
+      { courseId: 4, grade: 147 },
+      { courseId: 1, grade: 290 },
+      { courseId: 8, grade: 229 },
     ],
   },
 ];
 
 let courseInfo = [
-  { _id: 1, courseName: "html", finalMark: 100 },
-  { _id: 2, courseName: "nodeJs", finalMark: 100 },
-  { _id: 3, courseName: "js", finalMark: 200 },
-  { _id: 4, courseName: "react", finalMark: 90 },
+  { _id: 1, courseName: "SASS", finalMark: 250 },
+  { _id: 2, courseName: "Node.js", finalMark: 200 },
+  { _id: 3, courseName: "JavaScript", finalMark: 300 },
+  { _id: 4, courseName: "React", finalMark: 250 },
 ];
 
 let facultyInfo = [
@@ -118,7 +118,7 @@ db.course.aggregate([
 // -------------------- 4 -------------------- //
 db.student.aggregate([
   {
-    $match: { firstName: "Merna" },
+    $match: { firstName: "Ahmed" },
   },
 
   {
@@ -138,7 +138,7 @@ db.student.aggregate([
   },
 ]);
 
-// -------------------- 4 -------------------- //
+// -------------------- 5 -------------------- //
 db.student.aggregate([
   {
     $project: {
