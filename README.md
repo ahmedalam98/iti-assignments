@@ -23,6 +23,7 @@
     <li><a href="#extensible-markup-language-xml">Extensible Markup Language ( XML )</a></li>
     <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
     <li><a href="#nosql">No SQL ( MongoDB )</a></li>
+    <li><a href="#design">Design Elements</a></li>
   </ol>
 </details>
 
@@ -395,5 +396,17 @@
 #### Task 2
 
 - CRUD Operations & Operators
+
+#### Task 3
+
+- Aggregation Pipeline
+
+<a id="design"></a>
+
+## Design Elements
+
+#### Task 1
+
+- Design a personal website using photoshop
 
 <p align="right">(<a href="#top">back to top</a>)</p>
