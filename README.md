@@ -24,6 +24,7 @@
     <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
     <li><a href="#nosql">No SQL ( MongoDB )</a></li>
     <li><a href="#design">Design Elements</a></li>
+    <li><a href="#uiux">UI / UX</a></li>
   </ol>
 </details>
 
@@ -408,5 +409,13 @@
 #### Task 1
 
 - Design a personal website using photoshop
+
+<a id="uiux"></a>
+
+## UI / UX
+
+#### Task 1
+
+- Redesign a website user experience with WireFramePro
 
 <p align="right">(<a href="#top">back to top</a>)</p>
