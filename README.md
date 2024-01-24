@@ -418,4 +418,8 @@
 
 - Redesign a website user experience with WireFramePro
 
+#### Task 2
+
+- Figma prototype for a task 1
+
 <p align="right">(<a href="#top">back to top</a>)</p>
