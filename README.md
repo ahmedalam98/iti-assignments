@@ -422,4 +422,8 @@
 
 - Figma prototype for a task 1
 
+#### Task 3
+
+- Continue figma & brainwriting with Miro.com
+
 <p align="right">(<a href="#top">back to top</a>)</p>
