@@ -1,0 +1,18 @@
+.nav-content {
+  background-color: #2f2f2f;
+}
+li a {
+  color: #777 !important;
+}
+
+li a:hover {
+  color: white !important;
+}
+
+.half {
+  background-color: #e5e5e5;
+}
+
+.box {
+  background: linear-gradient(540deg, #cccccc, #e5e5e5);
+}
