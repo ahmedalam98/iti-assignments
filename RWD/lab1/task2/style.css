@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.box1 {
+  border: 1px solid black;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2 {
+  border: 2px solid rgb(255, 115, 0);
+  width: 200px;
+  height: 100px;
+}
