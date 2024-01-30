@@ -16,6 +16,7 @@
     <li><a href="#advanced-javascript">Advanced Javascript</a></li>
     <li><a href="#jquery">jQuery</a></li>
     <li><a href="#html5-css3">HTML5 & CSS3</a></li>
+    <li><a href="#rwd">Responsive Web Design</a></li>
     <li><a href="#es-next">ES Next</a></li>
     <li><a href="#pwa">PWA</a></li>
     <li><a href="#c-programming-language">C Programming Language</a></li>
@@ -25,6 +26,7 @@
     <li><a href="#nosql">No SQL ( MongoDB )</a></li>
     <li><a href="#design">Design Elements</a></li>
     <li><a href="#uiux">UI / UX</a></li>
+
   </ol>
 </details>
 
@@ -148,6 +150,14 @@
 
 - HTML5 Canvas : Gradient - Napoli logo - Line animation
 - CSS3 Blink & Card
+
+<a id="rwd"></a>
+
+## Responsive Web Design
+
+#### Task 1
+
+- Flex box properties
 
 <a id="es-next"></a>
 
