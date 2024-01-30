@@ -1,0 +1,57 @@
+html {
+  font-family: cursive;
+}
+
+nav {
+  background-color: #4a4c5c;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  width: 200px;
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box1,
+.box2 {
+  /* for boxes */
+  flex: 1;
+
+  /* for inner items */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 100px;
+  border: 2px solid black;
+}
+
+.box1 span,
+.box2 span {
+  padding: 20px;
+}
+
+.box1 div,
+.box2 div {
+  width: 100%;
+  background-color: #4a4c5c;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
