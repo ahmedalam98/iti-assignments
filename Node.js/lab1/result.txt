@@ -1,0 +1,5 @@
+add 5 5 = 10
+mul 5 4 1,7= 140
+favicon.ico NaN NaN = Invalid input, Please enter at least two valid numbers .
+add 5 4 2,6= 17
+favicon.ico NaN NaN = Invalid input, Please enter at least two valid numbers .
