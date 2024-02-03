@@ -26,7 +26,7 @@
     <li><a href="#nosql">No SQL ( MongoDB )</a></li>
     <li><a href="#design">Design Elements</a></li>
     <li><a href="#uiux">UI / UX</a></li>
-
+    <li><a href="#node">Node.js</a></li>
   </ol>
 </details>
 
@@ -160,6 +160,16 @@
 - Flex box properties
 
 <a id="es-next"></a>
+
+#### Task 2
+
+- Grid properties
+- Grid Area
+- Bootstrap
+
+#### Task 3
+
+- Bootstrap layout
 
 ## ES Next
 
@@ -435,5 +445,13 @@
 #### Task 3
 
 - Continue figma & brainwriting with Miro.com
+
+<a id="node"></a>
+
+## Node.js
+
+#### Task 1
+
+- Create a simple server calculator using req.url as a query string
 
 <p align="right">(<a href="#top">back to top</a>)</p>
