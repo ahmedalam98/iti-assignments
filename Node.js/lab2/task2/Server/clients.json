@@ -1,0 +1,20 @@
+[
+  {
+    "clientName": "ahmed",
+    "clientEmail": "ahmed@gmail.com",
+    "clientAddress": "port said",
+    "clientPhone": "123456"
+  },
+  {
+    "clientName": "ahmed",
+    "clientEmail": "test@gmail.com",
+    "clientAddress": "cairo",
+    "clientPhone": "14425"
+  },
+  {
+    "clientName": "Mohamed Ali Clay",
+    "clientEmail": "mohamed.ali@gmail.com",
+    "clientAddress": "United States",
+    "clientPhone": "55559999"
+  }
+]

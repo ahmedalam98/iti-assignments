@@ -26,6 +26,9 @@ h1 {
   font-size: 3.4rem;
   margin-bottom: 5rem;
   animation: anim_moveHeader 1.5s linear 0s infinite alternate;
+  background: linear-gradient(to right, #6157ff, #e92ffa, #f32170);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @keyframes anim_moveHeader {
@@ -55,4 +58,28 @@ ul {
 li {
   margin: 10px 70px;
   text-align: left;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#client {
+  color: #ff5ecc !important;
 }
