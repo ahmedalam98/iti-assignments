@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./welcome.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>Welcome Page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to My Data Displayer</h1>
+
+      <div class="data">
+        <p>
+          Welcome <span id="clientName">{clientName}</span> your entered data as
+          follows :
+        </p>
+        <br />
+        <ul>
+          <li>Email : <span id="clientEmail">{clientEmail}</span></li>
+          <li>Address : <span id="clientAddress">{clientAddress}</span></li>
+          <li>Phone Number : <span id="clientPhone">{clientPhone}</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./ajax.js"></script>
+  </body>
+</html>
