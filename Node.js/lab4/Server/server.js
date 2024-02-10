@@ -15,12 +15,12 @@ app.get("/style.css", (req, res) => {
   res.sendFile(join(__dirname, "../Client/style.css"));
 });
 
-app.get("/script.js", (req, res) => {
-  res.sendFile(join(__dirname, "../Client/script.js"));
-});
-
 app.get("/chat.svg", (req, res) => {
   res.sendFile(join(__dirname, "../Client/chat.svg"));
+});
+
+app.get("/favicon.ico", (req, res) => {
+  res.sendFile(join(__dirname, "../Client/favicon.ico"));
 });
 
 io.on("connection", (socket) => {
