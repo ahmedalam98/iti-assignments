@@ -1,6 +1,6 @@
 const express = require("express");
 const { createServer } = require("http");
-const { join } = require("path");
+// const { join } = require("path");
 const { Server } = require("socket.io");
 
 const app = express();
@@ -8,19 +8,19 @@ const server = createServer(app);
 const io = new Server(server);
 
 app.get("/", (req, res) => {
-  res.sendFile(join(__dirname, "../Client/index.html"));
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/style.css", (req, res) => {
-  res.sendFile(join(__dirname, "../Client/style.css"));
+  res.sendFile(__dirname + "/style.css");
 });
 
 app.get("/chat.svg", (req, res) => {
-  res.sendFile(join(__dirname, "../Client/chat.svg"));
+  res.sendFile(__dirname + "/chat.svg");
 });
 
 app.get("/favicon.ico", (req, res) => {
-  res.sendFile(join(__dirname, "../Client/favicon.ico"));
+  res.sendFile(__dirname + "/favicon.ico");
 });
 
 io.on("connection", (socket) => {
@@ -32,6 +32,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log("server running at http://localhost:3000");
+server.listen(process.env.PORT || 3000, () => {
+  console.log(`server running at http://localhost:${process.env.PORT || 3000}`);
 });
