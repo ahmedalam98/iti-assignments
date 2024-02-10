@@ -454,4 +454,17 @@
 
 - Create a simple server calculator using req.url as a query string
 
+#### Task 2
+
+- Custom module for Ticket Reservation System
+- Handle form data to be rendered in welcome page & file system module to save the data in clients.json file
+
+#### Task 3
+
+- Handle form data to be rendered in welcome page using express.js
+
+#### Task 4
+
+- Create a real time chat application using socket.io
+
 <p align="right">(<a href="#top">back to top</a>)</p>
