@@ -4,117 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Chat App</title>
-
-    <style>
-      body {
-        background-color: #8ec5fc;
-        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-        font-family: Roboto, sans-serif;
-        margin: 0;
-        padding-bottom: 3rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      img {
-        padding-top: 2rem;
-      }
-
-      .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #form {
-        background: rgba(0, 0, 0, 0.15);
-        padding: 0.25rem;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        height: 3rem;
-        box-sizing: border-box;
-        backdrop-filter: blur(10px);
-      }
-      #input {
-        border: none;
-        padding: 0 1rem;
-        flex-grow: 1;
-        border-radius: 2rem;
-        margin: 0.25rem;
-      }
-      #input:focus {
-        outline: none;
-      }
-      #form > button {
-        background: #333;
-        border: none;
-        padding: 0 1rem;
-        margin: 0.25rem;
-        border-radius: 10px;
-        outline: none;
-        color: #fff;
-        cursor: pointer;
-      }
-
-      #form > button:hover {
-        background: #5d83ff;
-      }
-
-      #messages {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      #messages > li {
-        padding: 0.5rem 1rem;
-      }
-      #messages > li:nth-child(odd) {
-        background: #efefef;
-      }
-      #messages > li:nth-child(even) {
-        background: #3f3d56;
-        color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div>
       <ul id="messages"></ul>
       <form id="form" action="">
-        <input id="input" autocomplete="off" /><button>Send</button>
+        <input
+          id="input"
+          autocomplete="off"
+          placeholder="Enter your messages here ..."
+        /><button>Send</button>
       </form>
     </div>
 
     <div class="img-container">
-      <img src="/chat.svg" alt="chat" width="500" height="500" />
+      <img src="/chat.svg" alt="chat" />
     </div>
 
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-    <script>
-      let socket = io();
-
-      let messages = document.getElementById("messages");
-      let form = document.getElementById("form");
-      let input = document.getElementById("input");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (input.value) {
-          socket.emit("chat message", input.value);
-          input.value = "";
-        }
-      });
-
-      socket.on("chat message", function (msg) {
-        var item = document.createElement("li");
-        item.textContent = msg;
-        messages.appendChild(item);
-        window.scrollTo(0, document.body.scrollHeight);
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

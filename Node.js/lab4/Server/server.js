@@ -11,14 +11,24 @@ app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "../Client/index.html"));
 });
 
+app.get("/style.css", (req, res) => {
+  res.sendFile(join(__dirname, "../Client/style.css"));
+});
+
+app.get("/script.js", (req, res) => {
+  res.sendFile(join(__dirname, "../Client/script.js"));
+});
+
 app.get("/chat.svg", (req, res) => {
   res.sendFile(join(__dirname, "../Client/chat.svg"));
 });
 
 io.on("connection", (socket) => {
-  socket.on("chat message", (msg) => {
+  // console.log("User connected with id : " + socket.id);
+
+  socket.on("my-custom-event", (msg) => {
     console.log("Message : " + msg);
-    io.emit("chat message", msg);
+    io.emit("my-custom-event", msg);
   });
 });
 
