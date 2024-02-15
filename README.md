@@ -27,6 +27,7 @@
     <li><a href="#design">Design Elements</a></li>
     <li><a href="#uiux">UI / UX</a></li>
     <li><a href="#node">Node.js</a></li>
+    <li><a href="#angular">Angular 17</a></li>
   </ol>
 </details>
 
@@ -465,6 +466,26 @@
 
 #### Task 4
 
-- Create a real time chat application using socket.io
+- Create a real time chat application using socket.io 🚀
+
+#### Task 5
+
+- Create a simple API for orders & products endpoints using Model Controller pattern & AJV for validation
+
+#### Task 6
+
+- Update the previous task to use MongoDB as a database and JWT for authentication & authorization 🚀
+
+<a id="angular"></a>
+
+## Angular 17
+
+#### Task 1
+
+- Create Angular project.
+
+#### Task 2
+
+- Create a simple compontents ( Binded Input Field , Image Slider )
 
 <p align="right">(<a href="#top">back to top</a>)</p>
