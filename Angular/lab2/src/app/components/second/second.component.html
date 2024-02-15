@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Image Slider</h1>
+
+  <img [src]="imgSrc[imgIndex]" alt="slider" width="400" height="250" />
+
+  <div class="btns">
+    <button class="btn" (click)="nextImg()">Next</button>
+    <button class="btn" (click)="prevImg()">Prev</button>
+    <button class="btn" (click)="slideShow()">Play</button>
+    <button class="btn" (click)="stopShow()">Stop</button>
+  </div>
+</div>

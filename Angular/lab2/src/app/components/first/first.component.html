@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Binded Input</h1>
+
+  <input
+    type="text"
+    placeholder="Type anything ..."
+    [(ngModel)]="name"
+    maxlength="32"
+  />
+
+  <p>{{ name }}</p>
+
+  <button class="btn" (click)="name = ''">Clear</button>
+</div>
