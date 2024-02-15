@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="form">
+    <div>
+      <img src="assets/logo.png" alt="logo" width="92" height="92" />
+    </div>
+
+    <div class="input-field">
+      <input type="text" name="name" [(ngModel)]="name" autocomplete="off" />
+      <label>Name</label>
+    </div>
+
+    <div *ngIf="validName; else falseBlock1"></div>
+    <ng-template #falseBlock1>
+      <p style="color: #ff7270">Name should be at least 3 characters long</p>
+    </ng-template>
+
+    <div class="input-field">
+      <input type="number" name="age" [(ngModel)]="age" autocomplete="off" />
+      <label>Age</label>
+    </div>
+
+    <div *ngIf="validAge; else falseBlock2"></div>
+    <ng-template #falseBlock2>
+      <p style="color: #ff7270">Age should be between 15 and 25</p>
+    </ng-template>
+
+    <button (click)="addStudent()">Add Student</button>
+
+    <div class="register">
+      <p>
+        © Created by :
+        <a
+          class="copyright"
+          href="https://github.com/ahmedalam98"
+          target="_blank"
+          >Ahmed Alam El-Deen</a
+        >
+      </p>
+    </div>
+  </div>
+</div>

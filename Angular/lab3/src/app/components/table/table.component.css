@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+  width: 350px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 8px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  color: white;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 250px;
+  }
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  font-weight: 300;
+}
+
+th {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+td {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}

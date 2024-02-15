@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15rem;
+  margin: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
