@@ -20,6 +20,9 @@ app.use("/api/orders", OrderRoutes);
 const ProductRoutes = require("./Routes/ProductRoutes");
 app.use("/api/products", ProductRoutes);
 
+const UserRoutes = require("./Routes/Auth");
+app.use("/api/users", UserRoutes);
+
 // Port Listening
 app.listen(PORT, () => {
   console.log("http://localhost:" + PORT);
