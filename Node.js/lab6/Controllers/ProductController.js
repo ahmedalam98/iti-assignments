@@ -1,97 +1,120 @@
-const { ProductClass, Products } = require("../Models/ProductModel");
-const ProductValidator = require("../Validators/ProductValidator");
+const ProductValidate = require("../Validators/ProductValidate");
+const ProductModel = require("../Models/ProductModel");
+const AuthController = require("./AuthController");
 
-// -------------------- Get All Products -------------------- //
+const { error } = require("ajv/dist/vocabularies/applicator/dependencies");
 
-let getAllProducts = (req, res) => {
-  let allProducts = ProductClass.getAllProducts();
-  res.status(200).json(allProducts);
-};
+// ------------------- Get All Products ------------------- //
 
-// -------------------- Get Product By Id -------------------- //
-
-let getProductById = (req, res) => {
-  let productId = req.params.id;
-
-  let product = Products.find((product) => product.id == productId);
-  if (!product) {
-    return res.status(404).json({ message: "Product not found" });
-  }
-
-  res.status(200).json({ message: "Product found", data: product });
-};
-
-// -------------------- Create Product -------------------- //
-
-let createProduct = async (req, res) => {
-  let newProduct = req.body;
-
-  if (ProductValidator(newProduct)) {
-    let product = new ProductClass(newProduct);
-    product.SaveProduct();
-    res.status(201).json({ message: "Product created", data: newProduct });
+let GetAllProducts = async (req, res) => {
+  let permission = AuthController.authorize(req, res);
+  if (permission) {
+    var AllProducts = await ProductModel.find({}).exec();
+    res.status(200).json(AllProducts);
   } else {
-    // For debugging
-    // console.log(ProductValidator.errors);
-
-    let errorMessage = ProductValidator.errors
-      .map((error) => {
-        return `${error.instancePath.slice(1)} ${error.message}`;
-      })
-      .join(", ");
-    res.status(404).json({
-      message: errorMessage,
-    });
+    res.status(404).json({ Message: "access denied" });
   }
 };
 
-// -------------------- Update Product -------------------- //
+// ------------------- Get Product By Name ------------------- //
 
-let updateProduct = (req, res) => {
-  let productId = req.params.id;
-  let updatedProduct = req.body;
+let GetProductByName = async (req, res) => {
+  let permission = AuthController.authorize(req, res);
+  if (permission) {
+    var Name = req.params.name;
+    let getProduct = await ProductModel.find({ name: Name }).exec();
+    res.status(200).json(getProduct);
+  } else {
+    res.status(404).json({ Message: "access denied" });
+  }
+};
 
-  if (ProductValidator(updatedProduct)) {
-    let product = Products.find((product) => product.id == productId);
-    if (!product) {
-      return res.status(404).json({ message: "Product not found" });
+// ------------------- Add New Product ------------------- //
+
+let AddNewProduct = async (req, res) => {
+  let permission = AuthController.authorize(req, res);
+  if (permission) {
+    let newProduct = req.body;
+
+    var product = new ProductModel(newProduct);
+    await product
+      .save()
+      .then((instance) => {
+        res
+          .status(201)
+          .json({ Message: "Added Successfully", instance: instance });
+      })
+      .catch((err) => {
+        res.status(404).json({ Message: err.message });
+      });
+  } else {
+    res.status(404).json({ Message: "access denied" });
+  }
+};
+
+// ------------------- Update Product ------------------- //
+
+let UpdateProductByName = async (req, res) => {
+  let permission = AuthController.authorize(req, res);
+  if (permission) {
+    let Name = req.params.name;
+    let newData = req.body;
+    if (ProductValidate(newData)) {
+      await ProductModel.findOneAndUpdate(
+        { name: Name },
+        { $set: newData },
+        { new: true }
+      )
+        .exec()
+        .then((update) => {
+          if (update) {
+            res
+              .status(201)
+              .json({ Message: "Updated Successfully", data: update });
+          } else {
+            res.status(201).json({ Message: "no such product found" });
+          }
+        })
+        .catch((err) => {
+          res.status(404).json({ Message: err.message });
+        });
+    } else {
+      res.status(404).json({ Message: ProductValidate.errors[0].message });
     }
-    product.name = updatedProduct.name;
-    product.price = updatedProduct.price;
-    res.status(201).json({ message: "Product updated", data: product });
   } else {
-    // For debugging
-    // console.log(ProductValidator.errors);
-
-    let errorMessage = ProductValidator.errors
-      .map((error) => {
-        return `${error.instancePath.slice(1)} ${error.message}`;
-      })
-      .join(", ");
-    res.status(404).json({
-      message: errorMessage,
-    });
+    res.status(404).json({ Message: "access denied" });
   }
 };
 
-// -------------------- Delete Product -------------------- //
+// ------------------- Delete Product ------------------- //
 
-let deleteProduct = (req, res) => {
-  let productId = req.params.id;
-
-  let product = Products.find((product) => product.id == productId);
-  if (!product) {
-    return res.status(404).json({ message: "Product not found" });
+let DeleteProductByName = async (req, res) => {
+  let permission = AuthController.authorize(req, res);
+  if (permission) {
+    let Name = req.params.name;
+    await ProductModel.findOneAndDelete({ name: Name })
+      .exec()
+      .then((deleted) => {
+        if (deleted) {
+          res
+            .status(201)
+            .json({ Message: "deleted Successfully", data: deleted });
+        } else {
+          res.status(201).json({ Error: "no such product found" });
+        }
+      })
+      .catch((err) => {
+        res.status(404).json({ Message: err.message });
+      });
+  } else {
+    res.status(404).json({ Message: "access denied" });
   }
-
-  let newProducts = Products.filter((product) => product.id != productId);
-  res.status(200).json({ message: "Product deleted", data: newProducts });
 };
 
 module.exports = {
-  getAllProducts,
-  getProductById,
-  createProduct,
-  updateProduct,
-  deleteProduct,
+  GetAllProducts,
+  GetProductByName,
+  AddNewProduct,
+  UpdateProductByName,
+  DeleteProductByName,
 };

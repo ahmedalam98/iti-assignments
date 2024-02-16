@@ -1,114 +1,67 @@
-const { OrderClass, Orders } = require("../Models/OrderModel");
-const OrderValidator = require("../Validators/OrderValidator");
+const OrderValidate = require("../Validators/OrderValidate");
+const OrderModel = require("../Models/OrderModel");
 
-// -------------------- Get All Orders -------------------- //
+// ------------------------- Get All Orders ------------------------- //
 
-let getAllOrders = (req, res) => {
-  let allOrders = OrderClass.getAllOrders();
-  res.status(200).json(allOrders);
+let GetAllOrders = (req, res) => {
+  var AllOrders = OrderModel.GetAll();
+  res.status(200).json(AllOrders);
 };
 
-// -------------------- Get Order By Id -------------------- //
+// ------------------------- Get Order By ID ------------------------- //
 
-let getOrderById = (req, res) => {
-  let orderId = req.params.id;
+let GetOrderByID = (req, res) => {
+  var ID = req.params.id;
 
-  let order = Orders.find((order) => order.id == orderId);
-  if (!order) {
-    return res.status(404).json({ message: "Order not found" });
-  }
+  let getOrder = OrderModel.GetOrderById(ID);
 
-  res.status(200).json({ message: "Order found", data: order });
+  res.status(200).json(getOrder);
 };
 
-// -------------------- Create Order -------------------- //
+// ------------------------- Add New Order ------------------------- //
 
-let createOrder = async (req, res) => {
+let AddNewOrder = (req, res) => {
   let newOrder = req.body;
 
-  if (OrderValidator(newOrder)) {
-    let order = new OrderClass(newOrder);
-    order.SaveOrder();
-    res.status(201).json({ message: "Order created", data: newOrder });
+  if (OrderValidate(newOrder)) {
+    var Order = new OrderModel(newOrder.items, newOrder.price);
+    let createdOrder = Order.SaveOrder();
+
+    res.status(201).json({ Message: "Added Successfully", data: createdOrder });
   } else {
-    // For debugging
-    // console.log(OrderValidator.errors);
-
-    let errorMessage = OrderValidator.errors
-      .map((error) => {
-        return `${error.instancePath.slice(1)} ${error.message}`;
-      })
-      .join(", ");
-    res.status(404).json({
-      message: errorMessage,
-    });
+    res.status(404).json({ Message: OrderValidate.errors[0].message });
   }
 };
 
-// -------------------- Update Order -------------------- //
+// ------------------------- Update Order By ID ------------------------- //
 
-let updateOrder = (req, res) => {
-  let orderId = req.params.id;
-  let updatedOrder = req.body;
+let UpdateOrderByID = (req, res) => {
+  let ID = req.params.id;
 
-  if (OrderValidator(updatedOrder)) {
-    let order = Orders.find((order) => order.id == orderId);
-    if (!order) {
-      return res.status(404).json({ message: "Order not found" });
-    }
-    order.name = updatedOrder.name;
-    order.products = updatedOrder.products;
-    order.totalPrice = updatedOrder.totalPrice;
-    res.status(201).json({ message: "Order updated", data: order });
+  let newData = req.body;
+
+  if (OrderValidate(newData)) {
+    let updated = OrderModel.UpdateOrderByID(ID, newData);
+    res.status(201).json({ Message: "Updated Successfully", data: updated });
   } else {
-    // For debugging
-    // console.log(OrderValidator.errors);
-
-    let errorMessage = OrderValidator.errors
-      .map((error) => {
-        return `${error.instancePath.slice(1)} ${error.message}`;
-      })
-      .join(", ");
-    res.status(404).json({
-      message: errorMessage,
-    });
+    res.status(404).json({ Message: OrderValidate.errors[0].message });
   }
 };
 
-// -------------------- Delete Order -------------------- //
+// ------------------------- Delete Order By ID ------------------------- //
 
-let deleteOrder = (req, res) => {
-  let orderId = req.params.id;
-  let order = Orders.find((order) => order.id == orderId);
+let DeleteOrderByID = (req, res) => {
+  let ID = req.params.id;
 
-  if (!order) {
-    return res.status(404).json({ message: "Order not found" });
-  }
+  let removedEle = OrderModel.DeleteOrderByID(ID);
 
-  let newOrders = Orders.filter((order) => order.id != orderId);
-  res.status(200).json({ message: "Order deleted", data: newOrders });
+  res.status(200).json({ Message: "Deleted Successfully", data: removedEle });
 };
-
-// --------------------Bonus : Get All Products In Order -------------------- //
-
-let getAllProductsInOrder = (req, res) => {
-  let orderId = req.params.id;
-  let order = Orders.find((order) => order.id == orderId);
-
-  if (!order) {
-    return res.status(404).json({ message: "Order not found" });
-  }
-
-  res.status(200).json({ message: "Products found", data: order.products });
-};
-
-// -------------------- Export All Functions -------------------- //
 
 module.exports = {
-  getAllOrders,
-  getOrderById,
-  createOrder,
-  updateOrder,
-  deleteOrder,
-  getAllProductsInOrder,
+  GetAllOrders,
+  GetOrderByID,
+  AddNewOrder,
+  UpdateOrderByID,
+  DeleteOrderByID,
 };

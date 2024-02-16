@@ -1,9 +1,10 @@
-// We are using dummy data for now, but in a real-world scenario, this data would be fetched from a database.
+// Implemented OrdersModel as a Dummy data with static methods to simulate the database operations :
+
 let Orders = [
   {
     id: 1,
-    totalPrice: 500,
-    products: [
+    price: 500,
+    items: [
       {
         id: 1,
         name: "PlayStation 5",
@@ -18,8 +19,8 @@ let Orders = [
   },
   {
     id: 2,
-    totalPrice: 1000,
-    products: [
+    price: 1000,
+    items: [
       {
         id: 3,
         name: "Nintendo Switch",
@@ -34,8 +35,8 @@ let Orders = [
   },
   {
     id: 3,
-    totalPrice: 1500,
-    products: [
+    price: 1500,
+    items: [
       {
         id: 5,
         name: "MacBook Pro",
@@ -45,25 +46,49 @@ let Orders = [
   },
 ];
 
-let OrderID = 3;
+let orderId = 4;
 
 // ---------------------------------------------------------- //
 
-class OrderClass {
-  constructor(body = { id, totalPrice, products }) {
-    this.id = body.id;
-    this.totalPrice = body.totalPrice;
-    this.products = body.products;
+class OrdersModel {
+  constructor(items, price) {
+    this.items = items;
+    this.price = price;
+  }
+
+  static GetAll() {
+    return Orders;
   }
 
   SaveOrder() {
-    this.id = ++OrderID;
+    this.id = ++orderId;
     Orders.push(this);
+    return this;
   }
 
-  static getAllOrders() {
-    return Orders;
+  static GetOrderById(ID) {
+    return Orders.find((ele) => {
+      return ele.id == ID;
+    });
+  }
+
+  static UpdateOrderByID(ID, data) {
+    return Products.find((ele) => {
+      if (ele.id == ID) {
+        ele.items = data.items;
+        ele.price = ele.price;
+        return ele;
+      }
+    });
+  }
+
+  static DeleteOrderByID(ID, data) {
+    return Orders.find((ele, i) => {
+      if (ele.id == ID) {
+        return Orders.splice(i, 1);
+      }
+    });
   }
 }
 
-module.exports = { Orders, OrderClass };
+module.exports = OrdersModel;
