@@ -1,0 +1,55 @@
+<div
+  class="p-5 w-25 m-auto d-flex justify-content-center align-items-center border border-white"
+>
+  <form [formGroup]="myRegForm" class="form">
+    <div
+      class="d-flex justify-content-center align-items-center form-group mb-5"
+    >
+      <label for="name" class="w-50">Name :</label>
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control w-100 ms-3"
+        placeholder="Enter Name"
+      />
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center form-group">
+      <label for="age" class="w-50">Age :</label>
+      <input
+        type="number"
+        formControlName="age"
+        class="form-control w-100 ms-3"
+        placeholder="Enter Age"
+      />
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center form-group mt-5"
+    >
+      <button
+        class="btn btn-primary w-50 d-block m-auto mb-4"
+        [disabled]="!myRegForm.valid"
+        (click)="getData()"
+      >
+        ADD
+      </button>
+    </div>
+
+    <hr class="w-100 mb-5" />
+
+    @if(!NameValid ) {
+    <div class="d-flex justify-content-center align-items-center">
+      <p class="text-danger">Name is less than 3 characters</p>
+    </div>
+    } @if(!AgeValid) {
+    <div class="d-flex justify-content-center align-items-center">
+      <p class="text-danger">Age is not between 15 & 30</p>
+    </div>
+    } @if(renderData) {
+    <div class="d-flex justify-content-center align-items-center">
+      <p style="color: greenyellow; margin-top: 6px">Data Added Successfully</p>
+    </div>
+    }
+  </form>
+</div>

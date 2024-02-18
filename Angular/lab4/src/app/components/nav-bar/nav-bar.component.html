@@ -1,0 +1,43 @@
+<div class="bg-success text-white text-center w-75 m-auto rounded-bottom mb-5">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark bg-success text-center d-flex justify-content-center flex-wrap rounded-bottom"
+  >
+    <a class="navbar-brand mx-3" href="#">Angular Router Task</a>
+
+    <div class="collapse navbar-collapse" style="margin-left: 250px">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/users"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Users</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users/5" routerLinkActive="active"
+            >User Details</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/anything-wrong"
+            routerLinkActive="active"
+            >Error</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
