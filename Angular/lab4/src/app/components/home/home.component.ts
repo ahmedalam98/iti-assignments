@@ -37,5 +37,9 @@ export class HomeComponent {
     console.log(this.myRegForm.value);
 
     this.renderData = true;
+
+    setTimeout(() => {
+      this.renderData = false;
+    }, 4000);
   }
 }

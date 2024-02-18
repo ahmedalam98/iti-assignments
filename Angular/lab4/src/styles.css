@@ -2,3 +2,25 @@
 body {
   background-color: #172937;
 }
+
+.success-message {
+  color: greenyellow;
+  margin: 6px 0;
+  opacity: 0;
+  animation: fadeInOut 4s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
