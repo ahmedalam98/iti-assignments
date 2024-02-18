@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import Student from '../../Utils/Student';
+import user from '../../Utils/user';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -22,7 +22,7 @@ export class RegisterComponent {
 
   @Output() toParent = new EventEmitter();
 
-  addStudent() {
+  adduser() {
     this.std.id = Math.floor(Math.random() * 100) + 1;
     this.std.name = this.name;
     this.std.age = this.age;
