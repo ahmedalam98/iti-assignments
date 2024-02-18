@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import user from '../../Utils/user';
+import Student from '../../Utils/Student';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './table.component.css',
 })
 export class TableComponent {
-  @Input() allusers: user[] = [];
+  @Input() allStudents: Student[] = [];
 }

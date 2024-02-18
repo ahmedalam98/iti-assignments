@@ -1,7 +1,7 @@
 import { TableComponent } from './../table/table.component';
 import { RegisterComponent } from './../register/register.component';
 import { Component } from '@angular/core';
-import user from '../../Utils/user';
+import Student from '../../Utils/Student';
 
 @Component({
   selector: 'app-parent',
@@ -11,12 +11,12 @@ import user from '../../Utils/user';
   styleUrl: './parent.component.css',
 })
 export class ParentComponent {
-  allusers: user[] = [];
+  allStudents: Student[] = [];
 
-  getuserData(event: any) {
+  getStudentData(event: any) {
     console.log(event);
 
-    this.allusers.push(event);
-    console.log(this.allusers);
+    this.allStudents.push(event);
+    console.log(this.allStudents);
   }
 }

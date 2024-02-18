@@ -6,19 +6,19 @@
     </tr>
   </thead>
   <tbody>
-    <ng-container *ngIf="allusers.length === 0">
+    <ng-container *ngIf="allStudents.length === 0">
       <tr>
         <td colspan="2">
           <h3 style="text-align: center; margin: 24px">
-            No users added yet, Please use the form
+            No students added yet, Please use the form
           </h3>
         </td>
       </tr>
     </ng-container>
 
-    <tr *ngFor="let user of allusers">
-      <td>{{ user.name }}</td>
-      <td>{{ user.age }}</td>
+    <tr *ngFor="let student of allStudents">
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
     </tr>
   </tbody>
 </table>

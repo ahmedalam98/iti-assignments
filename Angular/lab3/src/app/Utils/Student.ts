@@ -1,7 +1,7 @@
-interface user {
+interface Student {
   id: number;
   name: string;
   age: number | undefined;
 }
 
-export default user;
+export default Student;
