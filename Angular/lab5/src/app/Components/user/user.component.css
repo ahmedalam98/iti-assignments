@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #018591;
+  padding: 20px;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container:hover {
+  background-color: #00baa8;
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}

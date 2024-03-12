@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="card">
+    <h2>User Details</h2>
+    <div class="info">
+      <div>
+        <label>Name : </label>
+        <span> {{ requiredUser.name }}</span>
+      </div>
+      <div>
+        <label>Email : </label>
+        <span> {{ requiredUser.email }}</span>
+      </div>
+      <div>
+        <label>Age : </label>
+        <span> {{ requiredUser.age }}</span>
+      </div>
+      <div>
+        <label>City : </label>
+        <span> {{ requiredUser.city }}</span>
+      </div>
+      <div>
+        <label>Phone : </label>
+        <span> {{ requiredUser.phone }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button class="update" (click)="navigateToUpdatePage(requiredUser.id)">
+      Update
+    </button>
+    <button class="delete" (click)="deleteReqUser(requiredUser.id)">
+      Delete
+    </button>
+  </div>
+</div>

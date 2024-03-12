@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "name": "Jane Smith",
+      "age": 28,
+      "email": "jane.smith@example.com",
+      "phone": "+1 (555) 987-6543",
+      "city": "Los Angeles",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "+44 20 1234 5678",
+      "age": 42,
+      "city": "London"
+    },
+    {
+      "id": "4",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "phone": "+61 2 8765 4321",
+      "age": 31,
+      "city": "Sydney"
+    },
+    {
+      "name": "Michael Johnson",
+      "age": 29,
+      "email": "michael.johnson@example.com",
+      "phone": "+1 (555) 234-5678",
+      "city": "Chicago",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "name": "Sophia Garcia",
+      "email": "sophia.garcia@example.com",
+      "phone": "+34 91 234 5678",
+      "age": 38,
+      "city": "Madrid"
+    },
+    {
+      "id": "7",
+      "name": "William Taylor",
+      "email": "william.taylor@example.com",
+      "phone": "+1 (555) 345-6789",
+      "age": 45,
+      "city": "Houston"
+    }
+  ]
+}
