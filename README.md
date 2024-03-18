@@ -28,6 +28,10 @@
     <li><a href="#uiux">UI / UX</a></li>
     <li><a href="#node">Node.js</a></li>
     <li><a href="#angular">Angular 17</a></li>
+    <li><a href="#nest">Nest Js</a></li>
+    <li><a href="#react">React</a></li>
+    <li><a href="#mui">Material UI</a></li>
+    <li><a href="#next">Next Js</a></li>
   </ol>
 </details>
 
@@ -487,5 +491,49 @@
 #### Task 2
 
 - Create a simple compontents ( Binded Input Field , Image Slider )
+
+<a id="react"></a>
+
+## React
+
+#### Task 1
+
+- Create a simple nested components
+
+#### Task 2
+
+- Passing props to child using class components
+
+#### Task 3
+
+- useState hook & lifting state up
+
+#### Task 4
+
+- useEffect hook & fetching data from an API
+
+#### Task 5
+
+- Context API & useContext hook
+
+#### Task 6
+
+- Redux & Async Thunk to create a simple movie app 🚀
+
+<a id="mui"></a>
+
+## Material UI
+
+#### Task 1
+
+- Create a simple layout using Material UI
+
+<a id="next"></a>
+
+## Next JS
+
+#### Task 1
+
+- Dynamic routing options
 
 <p align="right">(<a href="#top">back to top</a>)</p>
