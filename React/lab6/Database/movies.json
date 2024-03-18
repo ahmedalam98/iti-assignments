@@ -1,0 +1,62 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "The Shawshank Redemption"
+    },
+    {
+      "id": "2",
+      "name": "The Godfather"
+    },
+    {
+      "id": "3",
+      "name": "The Dark Knight"
+    },
+    {
+      "id": "4",
+      "name": "12 Angry"
+    },
+    {
+      "id": "6",
+      "name": "The Lord of the Rings: The Return of the King"
+    },
+    {
+      "id": "7",
+      "name": "Pulp Fiction"
+    },
+    {
+      "id": "8",
+      "name": "Fight Club"
+    },
+    {
+      "id": "9",
+      "name": "Forrest Gump"
+    },
+    {
+      "id": "10",
+      "name": "Inception"
+    },
+    {
+      "id": "11",
+      "name": "Ahmed Alam"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "3",
+      "name": "The Dark Knight"
+    },
+    {
+      "id": "4",
+      "name": "12 Angry"
+    },
+    {
+      "id": "6",
+      "name": "The Lord of the Rings: The Return of the King"
+    },
+    {
+      "id": "11",
+      "name": "Ahmed Alam"
+    }
+  ]
+}
