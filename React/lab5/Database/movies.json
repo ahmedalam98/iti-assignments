@@ -1,0 +1,36 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "The Shawshank Redemption"
+    },
+    {
+      "id": "2",
+      "name": "The Godfather"
+    },
+    {
+      "id": "3",
+      "name": "The Dark Knight"
+    },
+    {
+      "id": "4",
+      "name": "Schindler's List"
+    },
+    {
+      "id": "5",
+      "name": "Pulp Fiction"
+    },
+    {
+      "id": "6",
+      "name": "The Lord of the Rings: The Return of the King"
+    },
+    {
+      "id": "8",
+      "name": "Fight Club"
+    },
+    {
+      "id": "9",
+      "name": "Forrest Gump"
+    }
+  ]
+}
