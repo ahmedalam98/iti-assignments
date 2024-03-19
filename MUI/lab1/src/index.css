@@ -1,0 +1,108 @@
+body {
+  background: #ad5389;
+  background: -webkit-linear-gradient(to bottom, #3c1053, #ad5389);
+  background: linear-gradient(to bottom, #3c1053, #ad5389);
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 30px;
+  color: #fff;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 20px solid #fff;
+  border-bottom-color: #3c1053;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+////////////////////////////////////////////////////////
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+}
+
+.add-form input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.add-form input {
+  margin-bottom: 40px;
+}
+
+.add-btn {
+  align-items: center;
+  justify-content: center;
+  background-clip: padding-box;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0.5rem 10px;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.add-btn {
+  background-color: #f5f5f1;
+  color: #221f1f;
+  border: 1px solid #221f1f;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+  background-color: #221f1f;
+  color: #f5f5f1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  border: 1px solid #f5f5f1;
+}

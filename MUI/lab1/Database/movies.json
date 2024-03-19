@@ -1,0 +1,42 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "The Shawshank Redemption"
+    },
+    {
+      "id": "2",
+      "name": "The Godfather"
+    },
+    {
+      "id": "3",
+      "name": "The Dark Knight"
+    },
+    {
+      "id": "4",
+      "name": "12 Angry"
+    },
+    {
+      "id": "7",
+      "name": "Pulp Fiction"
+    },
+    {
+      "id": "11",
+      "name": "Ahmed Alam"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "4",
+      "name": "12 Angry"
+    },
+    {
+      "id": "3",
+      "name": "The Dark Knight"
+    },
+    {
+      "id": "11",
+      "name": "Ahmed Alam"
+    }
+  ]
+}
