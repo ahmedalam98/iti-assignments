@@ -1,0 +1,83 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"Omar",
+            "body":" sit amet consectetur adipisicing elit. Ducimus, sapiente at facere veniam sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":2,
+            "name":"Ahmed",
+            "body":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, sapiente at facere veniam sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit"
+        },
+        {
+            "id":3,
+            "name":"Aya",
+            "body":"  quaerat modi. Sit, ipsa placeat?"
+        },
+        {
+            "id":4,
+            "name":"Eman",
+            "body":" Ducimus, sapiente at facere veniam sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":5,
+            "name":"Amgad",
+            "body":" sit amet consectetur adipisicing elit.sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":6,
+            "name":"Mariam",
+            "body":"at facere veniam sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":7,
+            "name":"Gana",
+            "body":" sit amet consectetur adipisicing elit.incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":8,
+            "name":"Mostafa",
+            "body":"Ducimus, sapiente at facere veniam sed accusamus molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":9,
+            "name":"Sara",
+            "body":"molestias nam, doloremque odit corrupti reiciendis incidunt necessitatibus quod fugit,"
+        },
+        {
+            "id":10,
+            "name":"Yossef",
+            "body":"reiciendis incidunt necessitatibus quod fugit,"
+        }
+    ]
+    ,
+    "news":[
+        {
+            "id":1,
+        "title":"title1",
+        "category":"sport",
+        "description":"description title1 "
+    },
+    {
+        "id":2,
+    "title":"title2",
+    "category":"education",
+    "description":"description title2 "
+},
+{
+    "id":3,
+"title":"title3",
+"category":"sport",
+"description":"description title3 "
+}
+    ],
+    "dashboard":[
+        {
+           "posts":5,
+           "likes":100,
+           "followers":200,
+           "following":10 
+        }
+    ]
+}
