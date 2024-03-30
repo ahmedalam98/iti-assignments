@@ -29,10 +29,14 @@
           </ul>
         </div>
 
-        <div class="social-links">
+        <div class="social-links hide-on-mobile">
           <input type="text" placeholder="Search Github" />
 
           <p>Sign In <span>or</span> Sign Up</p>
+        </div>
+
+        <div class="hide-on-desktop">
+          <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
@@ -40,7 +44,9 @@
     <header>
       <div class="header-container">
         <div class="header-content">
-          <h1>Built for <br />developers</h1>
+          <h1>
+            Built for <br class="hide-on-laptop hide-on-mobile" />developers
+          </h1>
           <p>
             GitHub is a development platform inspired by the way you work. From
             <b>open source</b> to <b>business</b>, you can host and review code,
@@ -51,7 +57,7 @@
 
         <div />
 
-        <div class="github-form">
+        <div class="github-form hide-on-mobile">
           <form>
             <label>Username</label>
             <input type="text" placeholder="Pick a username" />
@@ -69,6 +75,12 @@
               <b>terms of service</b> and <b>privacy statement</b>. We’ll
               occasionally send you account related emails.
             </p>
+          </form>
+        </div>
+
+        <div class="hide-on-desktop hide-on-laptop">
+          <form>
+            <button class="mobile-button">Sign Up for Github</button>
           </form>
         </div>
       </div>

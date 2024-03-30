@@ -24,6 +24,12 @@ body {
   padding: 1rem 8rem;
 }
 
+@media (max-width: 1200px) {
+  .nav-container {
+    padding: 1rem 4rem;
+  }
+}
+
 .logo {
   font-size: 3rem;
   color: white;
@@ -145,7 +151,8 @@ body {
   color: var(--text-grey);
 }
 
-.github-form form button {
+.github-form form button,
+.mobile-button {
   padding: 12px 24px;
   background-color: var(--button-color);
   color: white;
@@ -157,7 +164,8 @@ body {
   cursor: pointer;
 }
 
-.github-form form button:hover {
+.github-form form button:hover,
+.mobile-button:hover {
   background-color: #00a03e;
 }
 
@@ -168,6 +176,53 @@ body {
 
 .github-form form p b {
   color: var(--text-color);
+}
+
+.hide-on-desktop {
+  display: none;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 70vh;
+    padding: 0;
+    text-align: center;
+  }
+
+  .header-container h1 {
+    font-size: 3.6rem;
+    font-weight: lighter;
+  }
+
+  .hide-on-laptop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .hide-on-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links ul {
+    display: none;
+  }
 }
 
 /* ----------------------------------------------------------- */
@@ -197,6 +252,26 @@ body {
   font-weight: 200;
   width: 60%;
   color: var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  .section-container p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 4rem;
+  }
+
+  .section-container h2 {
+    font-size: 2rem;
+  }
+
+  .section-container p {
+    width: 100%;
+  }
 }
 
 .section-container button {
