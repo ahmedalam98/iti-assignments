@@ -495,6 +495,18 @@
 
 - Create a simple compontents ( Binded Input Field , Image Slider )
 
+#### Task 3
+
+- Passing Data from a Child Component to Parent Component
+
+#### Task 4
+
+- Routing & Navigation
+
+#### Task 5
+
+- Services & Dependency Injection
+
 <a id="react"></a>
 
 ## React
