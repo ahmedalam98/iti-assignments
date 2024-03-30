@@ -27,16 +27,12 @@
   }
 }
 
-.content {
-  .generate-font(@i) when (@i > 0) {
-    @value: 12 + (2 * @i);
-    .font-@{value}px {
-      font-size: ~"@{value}px";
-    }
-    .generate-font(@i - 1);
+@sizes: 18, 16, 14;
+each(@sizes, {
+  .font-@{value}px {
+    font-size: (@value * 1px);
   }
-  .generate-font(3);
-}
+});
 
 .finish-btn {
   width: 100%;
