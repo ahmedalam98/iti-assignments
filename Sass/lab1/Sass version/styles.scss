@@ -1,0 +1,271 @@
+$primary-color: #2a3138;
+$secondary-color: #24292f;
+$text-color: #3b65d7;
+$text-grey: #a2a2a2;
+$button-color: #00c450;
+$button-hover-color: #00a03e;
+$button-text-color: white;
+
+@mixin button-styles {
+  padding: 12px 24px;
+  background-color: $button-color;
+  color: $button-text-color;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container {
+  background-color: $secondary-color;
+  color: $button-text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+
+  @media (max-width: 1200px) {
+    padding: 1rem 4rem;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  color: $button-text-color;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  color: $button-text-color;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-links input {
+  height: 30px;
+  padding: 4px;
+  background-color: $primary-color;
+  outline: none;
+  border: 1px solid transparent;
+  color: $button-text-color;
+
+  &::placeholder {
+    font-weight: 600;
+  }
+}
+
+.social-links p {
+  font-weight: 700;
+
+  span {
+    color: $text-grey;
+  }
+}
+
+.header-container {
+  background-color: $primary-color;
+  color: $button-text-color;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: start;
+  padding: 4rem 8rem;
+  height: 87.5vh;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 70vh;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.header-container h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+
+  @media (max-width: 1200px) {
+    font-size: 3.6rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.header-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: $text-grey;
+
+  b {
+    color: $button-text-color;
+  }
+}
+
+.github-form {
+  background-color: $button-text-color;
+  width: 420px;
+  padding: 1.6rem 2rem;
+  border-radius: 8px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: $secondary-color;
+
+    label {
+      font-weight: 600;
+    }
+
+    input {
+      height: 40px;
+      padding: 5px;
+      outline: none;
+      border: 1px solid $text-grey;
+      border-radius: 4px;
+
+      &::placeholder {
+        font-weight: 600;
+        color: $text-grey;
+      }
+    }
+
+    button,
+    .mobile-button {
+      @include button-styles;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+
+      b {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.hide-on-desktop {
+  display: none;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .hide-on-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links ul {
+    display: none;
+  }
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 4rem 8rem;
+
+  span {
+    color: $text-grey;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 60%;
+    color: $primary-color;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    color: $text-color;
+    width: 160px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid $text-grey;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

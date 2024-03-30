@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container {
+  background-color: #24292f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+}
+@media (max-width: 1200px) {
+  .nav-container {
+    padding: 1rem 4rem;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-links input {
+  height: 30px;
+  padding: 4px;
+  background-color: #2a3138;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+}
+.social-links input::placeholder {
+  font-weight: 600;
+}
+
+.social-links p {
+  font-weight: 700;
+}
+.social-links p span {
+  color: #a2a2a2;
+}
+
+.header-container {
+  background-color: #2a3138;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: start;
+  padding: 4rem 8rem;
+  height: 87.5vh;
+}
+@media (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 70vh;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.header-container h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+}
+@media (max-width: 1200px) {
+  .header-container h1 {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 3rem;
+  }
+}
+
+.header-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #a2a2a2;
+}
+.header-content p b {
+  color: white;
+}
+
+.github-form {
+  background-color: white;
+  width: 420px;
+  padding: 1.6rem 2rem;
+  border-radius: 8px;
+}
+.github-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #24292f;
+}
+.github-form form label {
+  font-weight: 600;
+}
+.github-form form input {
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #a2a2a2;
+  border-radius: 4px;
+}
+.github-form form input::placeholder {
+  font-weight: 600;
+  color: #a2a2a2;
+}
+.github-form form button,
+.github-form form .mobile-button {
+  padding: 12px 24px;
+  background-color: #00c450;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.github-form form button:hover,
+.github-form form .mobile-button:hover {
+  background-color: #00a03e;
+}
+.github-form form p {
+  font-size: 12px;
+  text-align: center;
+}
+.github-form form p b {
+  color: #3b65d7;
+}
+
+.hide-on-desktop {
+  display: none;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .hide-on-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links ul {
+    display: none;
+  }
+}
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 4rem 8rem;
+}
+.section-container span {
+  color: #a2a2a2;
+  font-weight: 600;
+}
+.section-container h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .section-container h2 {
+    font-size: 2rem;
+  }
+}
+.section-container p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  width: 60%;
+  color: #2a3138;
+}
+@media (max-width: 1200px) {
+  .section-container p {
+    width: 100%;
+  }
+}
+.section-container button {
+  color: #3b65d7;
+  width: 160px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #a2a2a2;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
