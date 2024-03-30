@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Information Technology Institute Assignments
+# Information Technology Institute Web & UI Assignments
 
 <div align="center">
       <a href="https://iti.gov.eg/iti/home">
@@ -32,6 +32,7 @@
     <li><a href="#react">React</a></li>
     <li><a href="#mui">Material UI</a></li>
     <li><a href="#next">Next Js</a></li>
+    <li><a href="#sass">Sass & Less</a></li>
   </ol>
 </details>
 
@@ -480,6 +481,8 @@
 
 - Update the previous task to use MongoDB as a database and JWT for authentication & authorization 🚀
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a id="angular"></a>
 
 ## Angular 17
@@ -535,5 +538,25 @@
 #### Task 1
 
 - Dynamic routing options
+
+#### Task 2
+
+- SSG, ISR, SSR and SWR
+
+#### Task 3
+
+- Authentication using Next Auth + Fetching data from an API
+
+<a id="sass"></a>
+
+## Sass & Less
+
+#### Task 1
+
+- Create a GitHub landing clone using Sass
+
+#### Task 2
+
+- Create a simple classes using Less
 
 <p align="right">(<a href="#top">back to top</a>)</p>
