@@ -1,0 +1,47 @@
+// Primary color
+@primary-color: blue;
+
+// Secondary color
+@secondary-color: green;
+
+// Breakpoints
+@tablet: 768px;
+@mobile: 480px;
+
+.main {
+  h1 {
+    color: @primary-color;
+  }
+
+  p {
+    color: @secondary-color;
+  }
+
+  button {
+    background-color: @primary-color;
+    color: white;
+
+    &:hover {
+      background-color: @secondary-color;
+    }
+  }
+}
+
+.content {
+  .generate-font(@i) when (@i > 0) {
+    @value: 12 + (2 * @i);
+    .font-@{value}px {
+      font-size: ~"@{value}px";
+    }
+    .generate-font(@i - 1);
+  }
+  .generate-font(3);
+}
+
+.finish-btn {
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    width: 50%;
+  }
+}
