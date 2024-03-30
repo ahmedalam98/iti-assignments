@@ -1,0 +1,212 @@
+:root {
+  --primary-color: #2a3138;
+  --secondary-color: #24292f;
+  --text-color: #3b65d7;
+  --text-grey: #a2a2a2;
+  --button-color: #00c450;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container {
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-links input {
+  height: 30px;
+  padding: 4px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.social-links input::placeholder {
+  font-weight: 600;
+}
+
+.social-links p {
+  font-weight: 700;
+}
+
+.social-links span {
+  color: var(--text-grey);
+}
+
+/* ----------------------------------------------------------- */
+
+.header-container {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: start;
+  padding: 4rem 8rem;
+  height: 87.5vh;
+}
+
+.header-container h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.header-content {
+  width: 80%;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--text-grey);
+}
+
+.header-content b {
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.github-form {
+  background-color: white;
+  width: 420px;
+  padding: 1.6rem 2rem;
+  border-radius: 8px;
+}
+
+.github-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--secondary-color);
+}
+
+.github-form form label {
+  font-weight: 600;
+}
+
+.github-form form input {
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid var(--text-grey);
+  border-radius: 4px;
+}
+
+.github-form form input::placeholder {
+  font-weight: 600;
+  color: var(--text-grey);
+}
+
+.github-form form button {
+  padding: 12px 24px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.github-form form button:hover {
+  background-color: #00a03e;
+}
+
+.github-form form p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.github-form form p b {
+  color: var(--text-color);
+}
+
+/* ----------------------------------------------------------- */
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 4rem 8rem;
+}
+
+.section-container span {
+  color: var(--text-grey);
+  font-weight: 600;
+}
+
+.section-container h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.section-container p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  width: 60%;
+  color: var(--primary-color);
+}
+
+.section-container button {
+  color: var(--text-color);
+  width: 160px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid var(--text-grey);
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
